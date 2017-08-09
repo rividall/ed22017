@@ -41,7 +41,7 @@ Cada semana se creará un archivo [wiki](https://github.com/nicotron/ed222016/wi
 
 1. Processing Foundation. Descargar Processing. Recuperado: 7 de Mayo 2017, desde [http://www.processing.org/download](http://www.processing.org/download)
 2. Programación Creativa con Processing. Recuperado: 7 de Mayo 2017 desde [https://www.acamica.com/cursos/5/programacion-creativa-con-processing
-3. [The Nature of Code book](http://natureofcode.com/book/) - The Nature of Code videos
+3. [The Nature of Code book](http://natureofcode.com/book/) - **The Nature of Code videos**
 
 
 
