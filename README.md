@@ -10,9 +10,9 @@ Para cada semana se creará una carpeta de entrega de trabajos correspondiente a
 
 #### Tareas
 
-Las tareas se entregarán 5 minutos antes que termine la clase para la discusión de dudas, como un [issue](https://github.com/nicotron/ed222016/issues) en el repositorio del curso el que servirá también como lugar de comentarios entre los alumnos. En el caso que la clase no llegara al avance esperado y se tenga que modificar la tarea, ésta se entregará antes del fin del día siguiente. 
+Las tareas se entregarán 5 minutos antes que termine la clase para la discusión de dudas, como un [issue](https://github.com/disenoudd/ed22017/issues) en el repositorio del curso el que servirá también como lugar de comentarios entre los alumnos. En el caso que la clase no llegara al avance esperado y se tenga que modificar la tarea, ésta se entregará antes del fin del día siguiente. 
 
-Las correcciones de cada tarea de cada alumno se harán en los espacios de comentarios de cada uno de los [pull request](https://github.com/nicotron/ed222016/pulls) al momento de entregada la tarea. Guía para crear [pull request](https://help.github.com/articles/creating-a-pull-request/).
+Las correcciones de cada tarea de cada alumno se harán en los espacios de comentarios de cada uno de los [pull request](https://github.com/disenoudd/ed22017/pulls) al momento de entregada la tarea. Guía para crear [pull request](https://help.github.com/articles/creating-a-pull-request/).
 
 ##### Deadline: Cada tarea se debe entregar con un pull request hasta las 14:29:59 del día de la clase siguiente. 
 
@@ -20,13 +20,13 @@ Las correcciones de cada tarea de cada alumno se harán en los espacios de comen
 
 #### Problemas durante el curso
 
-Si alguien ve que existe algún problema general en los ejemplos, tareas o guías, el camino para hacerlo es generar un [issue](https://github.com/nicotron/ed222016/issues) en donde se podrá ver y comentar por todo el curso con el fin de resolver el problema en conjunto. Guía para crear [issues](https://help.github.com/articles/creating-an-issue/).
+Si alguien ve que existe algún problema general en los ejemplos, tareas o guías, el camino para hacerlo es generar un [issue](https://github.com/disenoudd/ed22017/issues) en donde se podrá ver y comentar por todo el curso con el fin de resolver el problema en conjunto. Guía para crear [issues](https://help.github.com/articles/creating-an-issue/).
 
 
 
 #### Información complementaria
 
-Cada semana se creará un archivo [wiki](https://github.com/nicotron/ed222016/wiki) con el nombre de la semana y con la información de cada clase, contenido y guías, para que cada alumno pueda recurrir a ella en caso de duda. Si aún no se responden las dudas particulares pueden generar un [issue](https://github.com/nicotron/ed222016/issues) y si aún en conjunto no han podido resolver esa duda, se puede recurrir a un email tanto al profesor como al ayudante para resolver ese issue. Se espera que ésta última instancia no ocurra nunca ya que los esfuerzos por entregar el contenido a prueba de toda duda son muy altos.
+Cada semana se creará un archivo [wiki](https://github.com/disenoudd/ed22017/wiki) con el nombre de la semana y con la información de cada clase, contenido y guías, para que cada alumno pueda recurrir a ella en caso de duda. Si aún no se responden las dudas particulares pueden generar un [issue](https://github.com/disenoudd/ed22017/issues) y si aún en conjunto no han podido resolver esa duda, se puede recurrir a un email tanto al profesor como al ayudante para resolver ese issue. Se espera que ésta última instancia no ocurra nunca ya que los esfuerzos por entregar el contenido a prueba de toda duda son muy altos.
 
 ------
 
