@@ -54,4 +54,3 @@ Cada semana se creará un archivo [wiki](https://github.com/nicotron/ed222016/wi
 3. ###### [Git and GitHub for Poets ](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 
 4. ###### [Indie Game The Movie](https://www.thepiratebay.org/torrent/8039351/Indie_Game_The_Movie_2012_720p_x264_AAC_HDTV_mp4) - [Trailer](https://www.youtube.com/watch?v=dINgx0y4GqM)
-
