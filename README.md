@@ -51,3 +51,45 @@ Cada semana se creará un archivo [wiki](https://github.com/disenoudd/ed22017/wi
 2. [The Nature of Code: Simulating Natural Systems with Processing](https://www.youtube.com/user/shiffman/playlists?sort=dd&shelf_id=6&view=50)
 3. [Git and GitHub for Poets ](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
 4. [Indie Game The Movie](https://www.thepiratebay.org/torrent/8039351/Indie_Game_The_Movie_2012_720p_x264_AAC_HDTV_mp4) - [Trailer](https://www.youtube.com/watch?v=dINgx0y4GqM)
+
+------
+
+### Calendario
+
+Semana - nota
+
+09 ago - inicio / tarea00
+
+16 ago - tarea01 / spelling bee / “por ejemplo”
+
+23 ago - tarea02 / spelling bee / “por ejemplo”
+
+30 ago - tarea03 / spelling bee / “por ejemplo”
+
+#### **06 sep - certamen00**
+
+13 sep - tarea04 / spelling bee / “por ejemplo”
+
+~~20 sep - nope~~
+
+27 sep - tarea05 / spelling bee / “por ejemplo”
+
+04 oct - tarea06* / spelling bee / “por ejemplo”
+
+11 oct - tarea07 / spelling bee / “por ejemplo”
+
+~~18 oct - semanaD~~
+
+#### 25 oct - certamen01
+
+~~01 nov - nope~~
+
+08 nov - tarea08 / spelling bee / “por ejemplo”
+
+15 nov - tarea09 / spelling bee / “por ejemplo”
+
+**22 nov - tarea10*** / spelling bee / “por ejemplo”
+
+29 nov - tarea11 / spelling bee / “por ejemplo”
+
+#### 06 dic - examen00
