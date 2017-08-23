@@ -66,7 +66,7 @@ Semana - nota
 
 30 ago - tarea03 / spelling bee / “por ejemplo”
 
-#### **06 sep - certamen00**
+**06 sep - certamen00**
 
 13 sep - tarea04 / spelling bee / “por ejemplo”
 
@@ -76,11 +76,11 @@ Semana - nota
 
 04 oct - tarea06* / spelling bee / “por ejemplo”
 
-11 oct - tarea07 / spelling bee / “por ejemplo”
+~~11 oct - semanaD~~
 
-~~18 oct - semanaD~~
+18 oct - tarea07 / spelling bee / “por ejemplo”
 
-#### 25 oct - certamen01
+**25 oct - certamen01**
 
 ~~01 nov - nope~~
 
@@ -92,4 +92,4 @@ Semana - nota
 
 29 nov - tarea11 / spelling bee / “por ejemplo”
 
-#### 06 dic - examen00
+**06 dic - examen00**
