@@ -1,3 +1,4 @@
+// comentarios
 int x = width/5;
 
 size(400,400);
