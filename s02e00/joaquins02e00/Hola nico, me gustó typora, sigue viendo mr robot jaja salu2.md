@@ -1,0 +1,1 @@
+Hola nico, me gustó typora, sigue viendo mr robot jaja salu2
