@@ -33,15 +33,15 @@ void draw() {                                 // inicio área de dibujo
   } else if (x > width|| x < 0) {             //  si x es mayor al ancho o menor a 9, la velocidad de x es...
     velx *= -1;                               // se multiplica por el inverso para que así pueda reborat
   }
-  if (x < 125 && y > 125 ||  x < 125 && y < 375) {             // si x es mayor a 125 e y es menor a 125 o y es menor a 125 y x mnenor a 375
+  if (x < 125 && y > 125 ||  x < 125 && y < 375) {             // si x es mayor a 125 e y es menor a 125 o x es menor a 125 e y mnenor a 375
     pelota = color (255, 255, 255); // blanco                  //  el resultado de lo anterior es blanco
-  } else if ( x < 375 && y < 125 || x < 375 && y < 375) {      // pero si y es menor a 125 y x mayor a 125 o x e smenor a 125 e y mayor a 125 
+  } else if ( x < 375 && y < 125 || x < 375 && y < 375) {      // pero si x es menor a 375 e y menor a 125 o x es menor a 375 e y es menor a 375 
     pelota = color (115, 221, 252);  //celeste                 // el resultado de lo anterior es celeste
   }
   
-  if (x > 375 && y > 125 ||  x > 375 && y < 375) {             // si x es mayor a 125 e y es menor a 125 o y es menor a 125 y x mnenor a 375
-    pelota = color (255, 255, 255); // blanco                  //  el resultado de lo anterior es blanco
-  } else if ( x > 125 && y < 125 || x > 125 && y > 375) {      // pero si y es menor a 125 y x mayor a 125 o x e smenor a 125 e y mayor a 125 
+  if (x > 375 && y > 125 ||  x > 375 && y < 375) {             // si x es mayor a 375 e y es mayor a 125 o x es mayor a 375 e y mnenor a 375
+    pelota = color (255, 255, 255); // blanco                  // el resultado de lo anterior es blanco
+  } else if ( x > 125 && y < 125 || x > 125 && y > 375) {      // pero si x es mayor a 125 e y menor a 125 o x es mayor a 125 e y es mayor a 125 
     pelota = color (115, 221, 252);  //celeste                 // el resultado de lo anterior es celeste
   }
 
