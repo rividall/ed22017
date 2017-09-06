@@ -21,6 +21,7 @@ void setup(){
 
 void draw() {
   background(0,0,1); // el color del background será negro y se pondrá en cada frame, para que se actualize y se vea solo la forma.
+  ellipse(x, y, 30+v1*3, 30+v2*3); // dibujar una elipse de centro (x, y) y de tamaño dependiente de v1 para que varíe 
   if (x > width || x < 0) { // si x llega  a un extremo la función se cumple.
       v1 *= -1; // se multiplica v1 para alternar a negativo.
       fill(morado); // el color de la ellipse será morado.
