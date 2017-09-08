@@ -4,7 +4,7 @@ Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestr
 
 Repositorio principal del curso con información de complementaria, guías, y trabajos y notas de cada uno de los alumnos.  
 
-Para cada semana se creará una carpeta de entrega de trabajos correspondiente al número de esa semana, (la primera clase tiene el nombre de **s00**). Para los certámenes la caperta de entrega será **c01** y **c02**. Para el examen la carpeta será **seasonFinale**. 
+Para cada semana se creará una carpeta de entrega de trabajos correspondiente al número de esa semana, (la primera clase tiene el nombre de **s00**). Para los certámenes la caperta de entrega será **c1** y **c2**. Para el examen la carpeta será **seasonFinale**. 
 
 
 
