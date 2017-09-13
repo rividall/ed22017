@@ -2,7 +2,8 @@
 //Certamen 1
 
 /* 
-Al procesar mi código, se visualizara una ellipse, de tamaño 5 * i, y 5 *j, que al presionar ‘a’, aumenta tu tamaño hasta 50, y al presionar ‘s’, disminuye su tamaño hasta 1. 
+Al procesar mi código, se visualizara una ellipse, de tamaño 5 * i, y 5 *j, 
+que al presionar ‘a’, aumenta tu tamaño hasta 50, y al presionar ‘s’, disminuye su tamaño hasta 1. 
 El relleno de esta ellipse, dependerá del for loop ‘i’ y ‘j’. 
 Luego al presionar el mouse, el color de la ellipse, cambia de forma random
 */
