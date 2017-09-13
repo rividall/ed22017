@@ -4,7 +4,7 @@ Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestr
 
 Repositorio principal del curso con información de complementaria, guías, y trabajos y notas de cada uno de los alumnos.  
 
-Para cada semana se creará una carpeta de entrega de trabajos correspondiente al número de esa semana, (la primera clase tiene el nombre de **s00**). Para los certámenes la caperta de entrega será **c01** y **c02**. Para el examen la carpeta será **seasonFinale**. 
+Para cada semana se creará una carpeta de entrega de trabajos correspondiente al número de esa semana, (la primera clase tiene el nombre de **s00**). Para los certámenes la caperta de entrega será **c1** y **c2**. Para el examen la carpeta será **seasonFinale**. 
 
 
 
@@ -66,7 +66,7 @@ Semana - nota
 
 30 ago - tarea03 / spelling bee / “por ejemplo”
 
-**06 sep - certamen00**
+**06 sep - c0**
 
 13 sep - tarea04 / spelling bee / “por ejemplo”
 
@@ -80,7 +80,7 @@ Semana - nota
 
 18 oct - tarea07 / spelling bee / “por ejemplo”
 
-**25 oct - certamen01**
+**25 oct - c**
 
 ~~01 nov - nope~~
 
@@ -92,4 +92,4 @@ Semana - nota
 
 29 nov - tarea11 / spelling bee / “por ejemplo”
 
-**06 dic - examen00**
+**06 dic - e0**
