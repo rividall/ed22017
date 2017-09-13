@@ -1,4 +1,5 @@
 //Universidad del desarrollo, Facultad de diseño, Diseño Digital
+// ¿Quién hizo esto?
 /*Se pide entregar un programa en donde se pueda modificar una grilla 
 por medio de input de mouse y el teclado, y que una vez el programa 
 no reciba input, este tenga un cambio cíclico. Las opciones de 
