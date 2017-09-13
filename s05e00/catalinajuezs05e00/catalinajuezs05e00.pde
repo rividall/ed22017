@@ -19,7 +19,7 @@ void setup() {
 void draw() {  
   background(0);
 
-  Circulo(width/2, (width/2 + width/4));
+  circulo(width/2, (width/2 + width/4));
   cuadrado(width/4, height/4, width/2, height/2);
   cuadrado(width/4, height/4, width/4, height/4);
 
@@ -30,7 +30,7 @@ void draw() {
   }
 }
 
-void Circulo(int x, int y) {  
+void circulo(int x, int y) {  
   stroke(255);
   strokeWeight(10);
   fill(miColor);
