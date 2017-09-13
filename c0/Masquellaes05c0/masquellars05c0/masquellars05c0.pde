@@ -5,7 +5,7 @@ por medio de input de mouse y el teclado, y que una vez el programa
 no reciba input, este tenga un cambio cíclico. Las opciones de 
 modificaciones de la grilla*/
 /*grilla de ellipses que agrandan su tamaño y donde la x de la grilla
-esta modificada por el mouse. Además se verá un fondo creciendo desde la esquina (0,0) más 
+está modificada por el mouse. Además se verá un fondo creciendo desde la esquina (0,0) más 
 3 circulos que imitarán una cara detras de la grilla. Su boca hablará de acuerdo al mouse en 
 su eje x. Por último, con las letras a, s, y d; la grilla cambiará de color.*/
 
@@ -23,24 +23,25 @@ void setup() {
   myColor = #CB9090; //se asigna un color a la variable
   x = 10; //se valoriza x
   y = 10;//se valoriza y
+    noStroke(); //sin línea
 }
 
 void draw() {
   background(255); //se asigna un color al fondo
 
-  noStroke(); //sin línea
+  //noStroke(); //sin línea
   fill(#F5D5D5);//con un color asignado
   rect(0, 0, z, w);//se dibuja un rectángulo
 
-  noStroke();//sin línea
+  //noStroke();//sin línea
   fill(#7C4D4D);//con un color asignado
   ellipse(155, 100, 90, 90);//se dibuja un elipse
 
-  noStroke();//sin línea
+  //noStroke();//sin línea
   fill(#7C4D4D);//con un color asignado
   ellipse(350, 100, 90, 90);//se dibuja un elipse
 
-  noStroke();//sin línea
+  //noStroke();//sin línea
   fill(#7C4D4D);//con un color asigrnado
   ellipse(255, 255, mouseY, mouseX);//se dibuja un elipse
 
