@@ -23,7 +23,7 @@ void draw() { // inicio ámbito de dibujo
   background(255); // fondo del canvas de color blanco
   x = mouseX; // variable x es igual a la posición del mouse en la coordenada X
 
-  //       init,      text,           update
+  //       init,      test,           update
   for (int i = 10; i <= 500 - x; i += 20) {  // for loop con i para x
     for (int j = 10; j <= 500 - x; j += 20) { // for loop con j para y
       int c = i + j; //variable local
