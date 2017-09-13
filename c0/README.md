@@ -8,7 +8,7 @@ Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestr
 
 ### Descripción
 
-Se pide entregar un programa en donde se pueda modificar una grilla por medio de input de mouse y el teclado, y que una vez el programa no resiba input, este tenga un cambio cíclico. Las opciones de modificaciones de la grilla son:
+Se pide entregar un programa en donde se pueda modificar una grilla por medio de input de mouse y el teclado, y que una vez el programa no reciba input, este tenga un cambio cíclico. Las opciones de modificaciones de la grilla son:
 
 - Cantidad de elementos en la grilla
 - Tamaño de la grilla
