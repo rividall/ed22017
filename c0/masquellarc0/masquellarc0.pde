@@ -23,7 +23,7 @@ void setup() {
   myColor = #CB9090; //se asigna un color a la variable
   x = 10; //se valoriza x
   y = 10;//se valoriza y
-    noStroke(); //sin línea
+  noStroke(); //sin línea
 }
 
 void draw() {
@@ -39,15 +39,13 @@ void draw() {
   ellipse(350, 100, 90, 90);//se dibuja un elipse
   ellipse(255, 255, mouseY, mouseX);//se dibuja un elipse
 
-  z+=0.9;// se va sumando 0.9 al valor de z
-  w+=0.9;// se va sumando 0.9 al valor de w
+  z += 0.9;// se va sumando 0.9 al valor de z
+  w += 0.9;// se va sumando 0.9 al valor de w
 
 
 
   //  loop     init, text, update
   for (float i = x; i <= width - mouseX; i += 50) {// for loop con i para x, si a x (10)es menor o igual al ancho menos el valor del mouse (x), a x se le suma el valor 50
-
-
     for (float j = y; j < height - margen; j += 50) {//for loop con j para y; si a y(10)es menor o igual al alto menos el valor del mouse (y), a y se le suma el valor 50
 
       fill(myColor);//con un color asignado
