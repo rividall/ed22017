@@ -1,4 +1,4 @@
-// Universidad del Desarrollo, Facultad de Diseño, Diseño Digital
+// Universidad del Desarrollo, Facultad de Diseño, Diseño Digital.
 // Natalia Malsch Coelho
 // Mi certamen se trata de un fondo que se rellena con la función for, logrando una textura de dos colores, 
 //esta textura también se puede ver una vez que se hace clic en el mouse que pasa a ser negro. 
