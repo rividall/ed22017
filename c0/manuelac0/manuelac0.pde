@@ -2,11 +2,11 @@
 //Certamen 1
 
 /* 
-Al procesar mi código, se visualizara una ellipse, de tamaño 5 * i, y 5 *j, 
-que al presionar ‘a’, aumenta tu tamaño hasta 50, y al presionar ‘s’, disminuye su tamaño hasta 1. 
-El relleno de esta ellipse, dependerá del for loop ‘i’ y ‘j’. 
-Luego al presionar el mouse, el color de la ellipse, cambia de forma random
-*/
+ Al procesar mi código, se visualizará una ellipse, de tamaño 5 * i, y 5 * j, 
+ que al presionar ‘a’, aumenta su tamaño hasta 50, y al presionar ‘s’, disminuye su tamaño hasta 1. 
+ El relleno de esta ellipse, dependerá del for loop ‘i’ y ‘j’. 
+ Luego al presionar el mouse, el color de la ellipse, cambia de forma random
+ */
 
 int x, y, velx, vely, x1, y1, t, speed; //Declaro las variables de posición, movimiento, y tamaño
 
@@ -16,15 +16,15 @@ void setup() { //Inicio void setup
   y = 0; //Posición de y
   x1 = 5; //Tamaño  de x
   y1 = 5; // Tamaño de y
-  velx = 1; //Variable de movimiento
-  vely = 2; //Variable de movimiento
+  velx = 2; //Variable de movimiento
+  vely = 4; //Variable de movimiento
 }  //Cierre void setup
 
 void draw() { //Inicio void draw
   background(255); //Color de fondo blanco
   noFill(); //Sin relleno
-  x += velx * 2; //A la posición x se le suma la variable de movimiento y se multiplica por 2
-  y += vely * 2; //A la posición y se le suma la variable de movimiento y se multiplica por 2
+  x += velx; //A la posición x se le suma la variable de movimiento y se multiplica por 2
+  y += vely; //A la posición y se le suma la variable de movimiento y se multiplica por 2
   x1 += t; //a x1 se le suma t
   y1 += t; //a y1 se le suma t
 
@@ -60,7 +60,6 @@ void draw() { //Inicio void draw
         x1 = 1; //x1 es igual a 1
         y1 = 1; //y1 es igual a 1
       } //Cierre del if
-      
     } //cierre del for j
   } //Cierre del for i
 } //cierre del void draw
