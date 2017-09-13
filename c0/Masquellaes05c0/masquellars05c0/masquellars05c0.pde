@@ -33,16 +33,10 @@ void draw() {
   fill(#F5D5D5);//con un color asignado
   rect(0, 0, z, w);//se dibuja un rectángulo
 
-  //noStroke();//sin línea
+//  //noStroke();//sin línea
   fill(#7C4D4D);//con un color asignado
   ellipse(155, 100, 90, 90);//se dibuja un elipse
-
-  //noStroke();//sin línea
-  fill(#7C4D4D);//con un color asignado
   ellipse(350, 100, 90, 90);//se dibuja un elipse
-
-  //noStroke();//sin línea
-  fill(#7C4D4D);//con un color asigrnado
   ellipse(255, 255, mouseY, mouseX);//se dibuja un elipse
 
   z+=0.9;// se va sumando 0.9 al valor de z
