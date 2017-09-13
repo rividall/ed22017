@@ -32,31 +32,33 @@ void draw() { //Inicio void draw
   for (int i = 1; i < 10; i = i + 1) { //i se declara como 1, y aumenta 1 hasta llegar a 9
     for (int j = 1; j < 10; j = j + 1) { //j se declara como 1, y aumenta 1 hasta llegar a 9
       println(i); //se imprime el valor de i
-      ellipse(x, y, x1*i, y1*j); //Ellipse en posición x,y, con diámetro de x1 se multiplica por el resultado de i, e y1 se multiplica por el resultado de j
+      ellipse(x, y, x1 * i, y1 * j); //Ellipse en posición x,y, con diámetro de x1 se multiplica por el resultado de i, e y1 se multiplica por el resultado de j
 
       //if de movimiento
       if (x > width || x < 1) { //Sí x es mayo a al ancho, ó x es menor a 1 
         velx *=-1; //La variable de movimiento x, se multiplica por -1
       } //cierre del if
 
-      if (y > 500 || y < 1) { //Sí y es mayo a al ancho, ó y es menor a 1 
+      if (y > height || y < 1) { //Sí y es mayo a al ancho, ó y es menor a 1 
         vely *=-1; //La variable de movimiento y, se multiplica por -1
       } //Cierre del if
 
-      //if tamaño
-      if (x1 < 0) { //Sí x1 es menor a 0
-        x1 = 0; //x1 es igual a 0
-      } //Cierre del if
-      if (y1 < 0) { //Sí y1 es menor a 0
-        y1 = 0;  //y1 es igual a 0
-      } //Cierre del if
+      // esto nunca ocurre
+          //if tamaño
+          if (x1 < 0) { //Sí x1 es menor a 0
+            x1 = 0; //x1 es igual a 0
+          } //Cierre del if
+          if (y1 < 0) { //Sí y1 es menor a 0
+            y1 = 0;  //y1 es igual a 0
+          } //Cierre del if
+      // esto nunca ocurre        
 
       if (x1 > 50 || y1 > 50) { //Sí x1 es mayor a 50, o  y1 es mayor a 50
         x1 = 50; //x1 es igual a 50
         y1 = 50; //y1 es igual a 50
       } //cierre del if
 
-      if ( x1 < 1 || y1 < 1) { //Sí x1 es menor a 1, o y1 es menor a 1
+      if ( x1 < 1 || y1 < 1) { //Si x1 es menor a 1, o y1 es menor a 1
         x1 = 1; //x1 es igual a 1
         y1 = 1; //y1 es igual a 1
       } //Cierre del if
