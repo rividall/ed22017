@@ -28,7 +28,7 @@ void setup() {
 
   margen = 150;
 
-  f= 50;
+  f = 50;
 }
 
 void draw() {
@@ -41,13 +41,13 @@ void draw() {
   text("mouseX = Al pasar la mitad de la composición los cuadrados aumentan su tamaño.", 200, 760);
   text("mousePressed = Los círculos cambian de color.", 200, 780); 
   text("a = La cantidad de elementos en la grilla aumenta.", 200, 800); 
-  text("d =  La cantidad de elementos en la grilla disminuye.", 200, 820);
+  text("d = La cantidad de elementos en la grilla disminuye.", 200, 820);
 
   margen2= mouseY/2; // El margen sigue el valor del mouse en relación al eje Y, pero dividido en dos.
                      // Lo que permite manipular la cantidad de columnas existentes en la composición
   
-  for (int i = margen2; i < width - margen2; i+= f) {
-    for (int j = margen; j < height- 350; j+= f) {
+  for (int i = margen2; i < width - margen2; i += f) {
+    for (int j = margen; j < height - 350; j += f) {
       noFill();
       strokeWeight(2);
       stroke(miColor);
@@ -59,7 +59,7 @@ void draw() {
     }
   }
 
-  if (mouseX > width/ 2) {  // Si  el mouseX es mayor a la mitad de la composición entonces cambia la variable “ tam “ a 40.
+  if (mouseX > width / 2) {  // Si  el mouseX es mayor a la mitad de la composición entonces cambia la variable “ tam “ a 40.
     tam = 40;
   } else {
     tam = 10;
@@ -69,7 +69,8 @@ void draw() {
 void mousePressed() {  // Si miColor es igual a color(r, g, b) al apretar el mouse este cambia su valor a color(r2, g2, b2), sino vuelve al valor anterior.
   if (miColor == color(r, g, b)) {
 
-    miColor = color(r2, g2, b2);
+    //miColor = color(r2, g2, b2);
+    miColor = miColor2;
   } else {
 
     miColor = color(r, g, b);
