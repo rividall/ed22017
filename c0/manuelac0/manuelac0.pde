@@ -29,7 +29,7 @@ void draw() { //Inicio void draw
   y1 += t; //a y1 se le suma t
 
   // for loop (init, test, update)
-  for (int i = 1; i < 10; i = i + 1) { //i se declara como 1, y aumenta 1 hasta llegar a 9
+  for (int i = 1; i < 10; i = i + 2) { //i se declara como 1, y aumenta 1 hasta llegar a 9
     for (int j = 1; j < 10; j = j + 1) { //j se declara como 1, y aumenta 1 hasta llegar a 9
       println(i); //se imprime el valor de i
       ellipse(x, y, x1 * i, y1 * j); //Ellipse en posición x,y, con diámetro de x1 se multiplica por el resultado de i, e y1 se multiplica por el resultado de j
