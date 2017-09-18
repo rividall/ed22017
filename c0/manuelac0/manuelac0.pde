@@ -1,10 +1,10 @@
 //Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestre - Expresión Digital II - 13.09.2017 - Manuela Larrain O.
 //Certamen 1
 
-/* 
- Al procesar mi código, se visualizará una ellipse, de tamaño 5 * i, y 5 * j, 
- que al presionar ‘a’, aumenta su tamaño hasta 50, y al presionar ‘s’, disminuye su tamaño hasta 1. 
- El relleno de esta ellipse, dependerá del for loop ‘i’ y ‘j’. 
+/*
+ Al procesar mi código, se visualizará una ellipse, de tamaño 5 * i, y 5 * j,
+ que al presionar ‘a’, aumenta su tamaño hasta 50, y al presionar ‘s’, disminuye su tamaño hasta 1.
+ El relleno de esta ellipse, dependerá del for loop ‘i’ y ‘j’.
  Luego al presionar el mouse, el color de la ellipse, cambia de forma random
  */
 
@@ -35,11 +35,11 @@ void draw() { //Inicio void draw
       ellipse(x, y, x1 * i, y1 * j); //Ellipse en posición x,y, con diámetro de x1 se multiplica por el resultado de i, e y1 se multiplica por el resultado de j
 
       //if de movimiento
-      if (x > width || x < 1) { //Sí x es mayo a al ancho, ó x es menor a 1 
+      if (x > width || x < 1) { //Sí x es mayo a al ancho, ó x es menor a 1
         velx *=-1; //La variable de movimiento x, se multiplica por -1
       } //cierre del if
 
-      if (y > height || y < 1) { //Sí y es mayo a al ancho, ó y es menor a 1 
+      if (y > height || y < 1) { //Sí y es mayo a al ancho, ó y es menor a 1
         vely *=-1; //La variable de movimiento y, se multiplica por -1
       } //Cierre del if
 
@@ -51,7 +51,7 @@ void draw() { //Inicio void draw
           if (y1 < 0) { //Sí y1 es menor a 0
             y1 = 0;  //y1 es igual a 0
           } //Cierre del if
-      // esto nunca ocurre        
+      // esto nunca ocurre
 
       if (x1 > 50 || y1 > 50) { //Sí x1 es mayor a 50, o  y1 es mayor a 50
         x1 = 50; //x1 es igual a 50
