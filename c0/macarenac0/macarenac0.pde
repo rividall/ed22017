@@ -1,9 +1,13 @@
 // Universidad del Desarrollo, Facultad de Diseño, Diseño Digital
 // Macarena Ferrer Valle
 // Certamen 0
-/* Una grilla hecha a partir de dos elipses, una sin fill (elipse 1) que aumenta en su tamaño ciclicamente y se revierte presionando las teclas "a" y "s".
- Tambien cambia su color en degrade, según la posición del mouse en la coordenada Y. La elipse 2, sin stroke, cambia de color (degrade) según la posición del
- mouse en la coordenada X. */
+/*
+  Una grilla hecha a partir de dos elipses, una sin fill (elipse 1) que aumenta
+  en su tamaño ciclicamente y se revierte presionando las teclas "a" y "s".
+  Tambien cambia su color en degrade, según la posición del mouse en la coordenada Y.
+  La elipse 2, sin stroke, cambia de color (degrade) según la posición del mouse
+  en la coordenada X. 
+*/
 
 int a, l; // declaración de variables de tamaño
 int t; //declaración de variable de modificación
