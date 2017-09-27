@@ -84,7 +84,7 @@ void draw() {
      a = 200;
    }
 
- if (key == 'c') {   // Si pulsas “d”  la variable “f” cambia a 150 aumentando la distancia de los ellipses y creando menos ellipses en la grilla.
+ if (key == 'c') {   // comentario copiado y no modifcado
      tamano = 150;
    }
  }
