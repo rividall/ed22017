@@ -1,8 +1,12 @@
-//Universidad del Desarrollo - 
+//Universidad del Desarrollo -
 //Facultad de Diseño - Diseño Digital - 6to semestre - Expresión Digital II
 //Certamen00
-//En este programa se visualizan líneas que van formando figuras segun la posición del mouse en el eje X e Y, las coordenadas a su vez cambian la posicion y tamaño de una pelota que
-//se encuentra en el canvas. Los clicks y tipeos cambian los colores del fondo y la posición del puntero.
+/*
+En este programa se visualizan líneas que van formando figuras según 
+la posición del mouse en el eje X e Y, las coordenadas a su vez cambian
+la posición y tamaño de una pelota que se encuentra en el canvas.
+Los clicks y tipeos cambian los colores del fondo y la posición del puntero.
+*/
 
 int q;                                //se declara q como un número entero
 float a;                              //se declara a como un numero decimal
