@@ -55,6 +55,11 @@ void draw() {
 }
 
 void mousePressed() {
+  /*
+  Investigar que significa que una variable global sea modificada en este ámbito
+  para ser usada como local dentro de una función de una clase.
+  Cuestionar si es el mejor camino éste, y proponer uno mejor, si existe.
+  */
   if (l == 1) {                           //Función condicional para grosor de la líneas de 1 px.
     l = 5;                                //Cambiar grosor a 5 px.
   } else {
