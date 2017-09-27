@@ -76,7 +76,7 @@ void draw() {
 
  // Inicialización ámbito del Teclado (teclas)
 
- void keyPressed () {
+ void keyPressed() {
    if (key == 'z') {   // Si pulsas “z”  la variable “f” cambia a 300 disminuyendo la distancia de los ellipses y creando menos ellipses en la grilla.
     a = 300;
    }
@@ -90,11 +90,9 @@ void draw() {
  }
  //Inicialización ámbito de soltar el teclado
 
- void keyReleased()
-
-{
+ void keyReleased(){
   if(tamano == 0) { //si tamano deja de ser 255 cambia a un valor de 10 ( normal )
-    tamano = 255;
+    tamano = 255; // nunca ocurre
   } else {
     tamano = 10;
   }
