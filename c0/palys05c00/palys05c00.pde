@@ -16,8 +16,8 @@ Dot[] d = new Dot[625];                   //Declaración de array que completa c
 int cambio;                               //Declaración de variable de cambio de elementos.
 int l, s;                                 //Declaración de variables de grosor y diámetro.
 
-int c1 = color(111, 197, 166);            //Verde.
-int c2 = color(234, 215, 104);            //Amarillo.
+color c1 = color(111, 197, 166);            //Verde.
+color c2 = color(234, 215, 104);            //Amarillo.
 
 void setup() {
   size(850, 850);                         //Tamaño del canvas.
