@@ -1,11 +1,15 @@
 // Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestre
 // Expresión Digital II - 2017
 // Gabriela Navarro Risopatrón
-// gabrielas04c00
+// gabrielasc0
 
-/* Dos grillas hecha a partir de círculos, una verde y otra turqueza. Cambian de posición de manera constante. Las grillas, aparecen
-y desaparecen dependiendo del lugar en el que se ubique el mouse dentro del canvas. Cuando uno utiliza la tecla "t" o la tecla "v", el 
-color del grosor de los círculos cambia a negro o a gris respectivamente.*/
+/*
+Dos grillas hecha a partir de círculos, una verde y otra turqueza.
+Cambian de posición de manera constante. Las grillas, aparecen y desaparecen
+dependiendo del lugar en el que se ubique el mouse dentro del canvas.
+Cuando uno utiliza la tecla "t" o la tecla "v", el color del grosor de los
+círculos cambia a negro o a gris respectivamente.
+*/
 
 // Se declaran las variables globales
 int margen;                                                             // Se declara variable margen
@@ -25,8 +29,8 @@ void setup() {
   verde = (#9FE57D);                                                    // Se le da valor al color verde
   grisoscuro = (190);                                                   // Se le da valor al color gris oscuro
   negro =(0);                                                           // Se le da valor al color negro
-} 
-// Fin del ámbito 
+}
+// Fin del ámbito
 
 // Inicializacion ámbito de dibujo
 void draw() {
@@ -46,7 +50,7 @@ void draw() {
     }
   }
   for (float i = x; i <= width - mouseX; i += 40) {                     // For loop con i asignado a x
-    for (float j = y; j <= height - margen; j += 40) {                  // For loop con j asignado a i 
+    for (float j = y; j <= height - margen; j += 40) {                  // For loop con j asignado a i
       float x = i + j;                                                  // Variable local
       fill(verde);                                                      // Se le asigna el color verde
       ellipse(i, j, 15, 15);                                            // Se dibuja un círculo
@@ -54,7 +58,7 @@ void draw() {
       y += 0.001;                                                       // Se le suma a y 0.001
     }
 
-    if (x < 300) {                                                      // Sí, x es menor 300 
+    if (x < 300) {                                                      // Sí, x es menor 300
       x += 0.001;                                                       // X sigue creciendo
     }
     if (y < 300) {                                                      // Sí, y es menor a 300
@@ -67,7 +71,7 @@ void draw() {
 // Fin del ámbito
 
 // Inicialización ámbito del Teclado (teclas)
-void keyPressed() {                                                     
+void keyPressed() {
   if (key == 't') {                                                     // Si se apreta la letra "t"
     stroke(negro);                                                      // El grosor cambiará de color a negro
   }
