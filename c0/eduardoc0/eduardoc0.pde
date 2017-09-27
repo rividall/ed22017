@@ -38,10 +38,10 @@ void draw() {                       //ámbito de dibujo
   }
 }
 void mousePressed() {            //ámbito de click de mouse
-  if (negro == color(negro)) {   //si negro es de color negro
-    negro= color(blanco);                //con un click el negro cambia a blanco
+  if (negro == negro) {   //si negro es de color negro
+    negro= blanco;                //con un click el negro cambia a blanco
   } else {                       //con otro click
-    blanco=color(negro);                //blanco cambia a negro
+    blanco=negro;                //blanco cambia a negro ESTO NUNCA OCURRE
   }
 }
 
