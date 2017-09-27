@@ -49,14 +49,11 @@ void draw() {
       stroke(c, mouseY/2); // los bordes tendrán el color 1 (que varía) y su opacidad varía segun la posición del mouse en Y
 
       int r = (int)random(3); // se crea un random para determinar los colores del stroke (random varía entre los valores 0, 1 y 2)
-      if (r == 0) {
+      if (r == 0 || r == 2) {
         c = bl; // si el random da 0 el color será blanco
       }
       if (r == 1) {
         c = c4; // si el random da 1 el color será amarillo
-      }
-      if (r == 2) {
-        c = bl; // si el random da 2 el color será blanco
       }
 
       strokeWeight(random(4)); // se crea un random de 4 valores (0, 1, 2 y 3) que hace variar el grosor del borde del objeto
