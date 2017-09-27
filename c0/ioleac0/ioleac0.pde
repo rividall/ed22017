@@ -38,20 +38,20 @@ void draw() {//Inicio draw
   rect(250, 250, mouseX, mouseX);//Rectángulo en el centro que se expande proporcional a mouse en X
   rectMode(CENTER);//Parámetros de X,Y del rectángulo se convierte en centro.
 
-  noStroke();//Sin linea
+  // noStroke();//Sin linea
   fill(azul, 125);//Color azul con 50% aprox de opacidad
   ellipse(50, 50, mouseX, mouseX);//círculo en la esquina izquiera superior que se
   //expande proporcional a mouse en X
-  noStroke();//Sin linea
-  fill(azul, 125);//Color azul con 50% aprox de opacidad
+  // noStroke();//Sin linea
+  // fill(azul, 125);//Color azul con 50% aprox de opacidad
   ellipse(50, 450, mouseX, mouseX);//círculo en la esquina izquierda inferior que se
   //expande proporcional a mouse en X
-  noStroke();//Sin linea
-  fill(azul, 125);//Color azul con 50% aprox de opacidad
+  // noStroke();//Sin linea
+  // fill(azul, 125);//Color azul con 50% aprox de opacidad
   ellipse(450, 50, mouseX, mouseX);//Círculo en la esquina derecha superior que se
   //expande proporcional a mouse en X
-  noStroke();//Sin linea
-  fill(azul, 125);//Color azul con 50% aprox de opacidad
+  // noStroke();//Sin linea
+  // fill(azul, 125);//Color azul con 50% aprox de opacidad
   ellipse(450, 450, mouseX, mouseX);//Círculo en la esquina derecha inferior que se
   //expande propocional a mouse en X
 
@@ -79,8 +79,8 @@ void draw() {//Inicio draw
       stroke(negro);   // las líneas se vuelve negra
     }//Fin if lìneas negras
     line(0, x, 500, x);
-    { //Tamaño y posición de las lineas
-    }//Fin line
+    // { //Tamaño y posición de las lineas
+    // }//Fin line
   }//Fin for loop
 }//Fin void draw
 
