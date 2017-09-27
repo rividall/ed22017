@@ -1,6 +1,6 @@
 // Expresión Digital II - Diseño Digital - UDD - 2017
 // Paulina Descouvieres
-// s05c00paly
+// palyc0
 
 /*
 Al ejecutar la función, se dibuja una grilla con líneas que giran sobre ésta como eje,
@@ -88,7 +88,7 @@ void keyPressed() {
   if (key == 'n') {                       //Función condicional para tecla 'n'.
      c2 = color(r, g, b);                 //Cambio de color de las elipses.
   }
-  
+
   if (key == 'q') {                       //Función condicional para tecla 'q'.
     exit();                               //Cerrar la ventana.
   }
