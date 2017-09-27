@@ -35,10 +35,11 @@ void setup() {
   c3 = color(ce); // variable controlable de color de los círculos
   c4 = color(am); // variable controlable de color de las cruces
   div = 5; // variable de división que luego va a cambiar
+  frameRate(10); // disminuye la cantidad de cuadros a 10 por segundo, para que el programa no sea tan rápido
 }
 
 void draw() {
-  frameRate(10); // disminuye la cantidad de cuadros a 10 por segundo, para que el programa no sea tan rápido
+
 
   background(n); // fondo negro
 
