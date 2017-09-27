@@ -74,11 +74,8 @@ void draw() {
       stroke(c2, mouseX/2); // el color del borde varía tabién, pero la opacidad esta controlada por la posición del mouse con respecto a X
 
       int r = (int)random(3); // se crea un random de 3 valores (0, 1 y 2) para determinar el color de los objetos
-      if (r == 0) {
+      if (r == 0 && r == 1) {
         c2 = c3; // si el random da 0 el color es celeste
-      }
-      if (r == 1) {
-        c2 = c3; // si el random da 1 el color es celeste
       }
       if (r == 2) {
         c2 = bl; // si el random da 2 el color es blanco
