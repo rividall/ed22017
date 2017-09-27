@@ -44,35 +44,35 @@ void draw(){ //inicio ámbito dibujo
    strokeWeight(2);
    ellipse(mouseX, mouseY, r, s); //los puntos son la posición del mouse y dos variables declaradas e inicializadas previamente
 
-//modificadores
-x += 2; //x aumenta su valor en 2
-y -= 2; //y disminuye su valor en 2
-r += 0.5; //r aumenta su valor en 0,5
-s += 0.5;// s aumenta su valor en 0.5
+  //modificadores
+  x += 2; //x aumenta su valor en 2
+  y -= 2; //y disminuye su valor en 2
+  r += 0.5; //r aumenta su valor en 0,5
+  s += 0.5;// s aumenta su valor en 0.5
 
 
-//loop init, text, update
-for (float i = x1; i > width - mouseX; i -= 10){ //for loop con i para x1
+  //loop init, text, update
+  for (float i = x1; i > width - mouseX; i -= 10){ //for loop con i para x1
 
-  for(float j = y; j < height - mouseY; j += 10){ //for loop con j para y
+    for(float j = y; j < height - mouseY; j += 10){ //for loop con j para y
 
-  // línea de color verde, de grosor 4px, cuyos puntos son i, j, y dos variables declaradas e inicializadas previamente
-    stroke(verde);
-    strokeWeight(4);
-    line (i, j, x, y1);
-    //modificadores
-    x += 0.5; //x aumenta su valor en 0,5
-    y1 += 0.5; //y1 aumenta su valor en 0,5
+    // línea de color verde, de grosor 4px, cuyos puntos son i, j, y dos variables declaradas e inicializadas previamente
+      stroke(verde);
+      strokeWeight(4);
+      line (i, j, x, y1);
+      //modificadores
+      x += 0.5; //x aumenta su valor en 0,5
+      y1 += 0.5; //y1 aumenta su valor en 0,5
 
-    if (x > 490){ // si x es menor a 490 se reducirá en 3
-     x -= 3;
-    }
+      if (x > 490){ // si x es menor a 490 se reducirá en 3
+       x -= 3;
+      }
 
-    if (y > 490) { // si y es mayor a 490 se multiplicará por -1
-     y *= -1;
+      if (y > 490) { // si y es mayor a 490 se multiplicará por -1
+       y *= -1;
+      }
     }
   }
-}
 } //fin ámbito dibujo
 
 void keyPressed(){ //inicio ámbito de presión de teclas
