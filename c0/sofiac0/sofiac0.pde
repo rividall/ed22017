@@ -25,23 +25,23 @@ color negro, blanco, naranjo, verde; //Se declaran los distintos colores a usar
 int w, h, f; //Se declaran las distintas variables a usar.
 int margen; // Declaración variable margen.
 
-void setup () { //Inicialización de configuración.
-  size (500, 500); //Inicialización del tamaño al canvas.
+void setup() { //Inicialización de configuración.
+  size(500, 500); //Inicialización del tamaño al canvas.
 
   margen = 50; //Iinicialización variable margen.
 
-  negro = color (0, 0, 0); //Inicialización del color negro.
-  blanco = color (255, 255, 255); //Inicialización variable del color blanco.
-  naranjo = color (255, 128, 0); //Inicialización variable del oclor narnajo.
-  verde = color (0, 255, 176); //Inicialización variable del color verde.
+  negro = color(0, 0, 0); //Inicialización del color negro.
+  blanco = color(255, 255, 255); //Inicialización variable del color blanco.
+  naranjo = color(255, 128, 0); //Inicialización variable del oclor narnajo.
+  verde = color(0, 255, 176); //Inicialización variable del color verde.
 
   w = 3; //Inicialización del ancho de la ellipse.
   h = 3; //Iinicialización de la altura de la ellipse.
 
-  stroke (blanco); //Inicialización variable stroke color blanco.
+  stroke(blanco); //Inicialización variable stroke color blanco.
 }
 
-void draw () { //Inicialización de área de dibujo.
+void draw() { //Inicialización de área de dibujo.
   background (negro);//Se dibuja el color de fondo para el canvas.
   margen = mouseX;//Se dibhuja la variable x, la cual es igual a la coordenada del mouse en x.
 
