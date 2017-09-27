@@ -39,7 +39,6 @@ void setup() {
 }
 
 void draw() {
-  lr = (int)map(mouseX, 0, width, 10, 80);
 
   background(n); // fondo negro
 
