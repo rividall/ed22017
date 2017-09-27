@@ -23,12 +23,12 @@ void setup() {
   x = 10;                                                               // Se le da valor 10 a la x
   y = 10;                                                               // Se le da valor 10 a la y
 
-  turqueza = (#3FC9BC);                                                 // Se le da valor al color turqueza
-  gris = (100);                                                         // Se le da valor al color gris
-  blanco = (255);                                                       // Se le da valor al color blanco
-  verde = (#9FE57D);                                                    // Se le da valor al color verde
-  grisoscuro = (190);                                                   // Se le da valor al color gris oscuro
-  negro =(0);                                                           // Se le da valor al color negro
+  turqueza = color(#3FC9BC);                                                 // Se le da valor al color turqueza
+  gris = color(100);                                                         // Se le da valor al color gris
+  blanco = color(255);                                                       // Se le da valor al color blanco
+  verde = color(#9FE57D);                                                    // Se le da valor al color verde
+  grisoscuro = color(190);                                                   // Se le da valor al color gris oscuro
+  negro = color(0);                                                           // Se le da valor al color negro
 }
 // Fin del ámbito
 
@@ -44,14 +44,12 @@ void draw() {
 // Loop
   for (int i = margen; i <= width - mouseX; i += 40) {                  // For loop con i designado a margen
     for (float j = y; j <= height - margen; j += 40) {                  // For loop con j asignado a y
-      float x = i + j;                                                  // Variable
       fill(turqueza);                                                   // Se le asigna el color turqueza
       ellipse(i, j, 15, 15);                                            // Se dibuja un círculo
     }
   }
   for (float i = x; i <= width - mouseX; i += 40) {                     // For loop con i asignado a x
     for (float j = y; j <= height - margen; j += 40) {                  // For loop con j asignado a i
-      float x = i + j;                                                  // Variable local
       fill(verde);                                                      // Se le asigna el color verde
       ellipse(i, j, 15, 15);                                            // Se dibuja un círculo
       x += 0.002;                                                       // Se le suma a x 0.002
@@ -63,8 +61,6 @@ void draw() {
     }
     if (y < 300) {                                                      // Sí, y es menor a 300
       y -=0.001;                                                        // Y deja de crecer
-
-      keyPressed();                                                     // Se declara keyPressed (inicializa)
     }
   }
 }
