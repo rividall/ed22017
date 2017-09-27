@@ -2,7 +2,7 @@
 //Facultad de Diseño - Diseño Digital - 6to semestre - Expresión Digital II
 //Certamen00
 /*
-En este programa se visualizan líneas que van formando figuras según 
+En este programa se visualizan líneas que van formando figuras según
 la posición del mouse en el eje X e Y, las coordenadas a su vez cambian
 la posición y tamaño de una pelota que se encuentra en el canvas.
 Los clicks y tipeos cambian los colores del fondo y la posición del puntero.
@@ -27,22 +27,21 @@ void draw() {                       //ámbito de dibujo
   q = mouseY;                       // q varía en eje Y con el mouse
   a = mouseX;                       // a varía en eje X con el mouse
   for (int i = q; i < 600; i +=15) { //si i es menor a 600, a q se le suman 15
-
+    strokeWeight(3);                 //grosor de las líneas
+    stroke(a, q, mouseX);            //color de las lineas, se ven afectadas por la posicion del mouse
     line(0, i, 600, mouseX);         //se dibuja una línea, segun la posición del mouse ésta se ve afectada
     line(i, 0, mouseX, 600);         //se dibuja una línea, segun la posición del mouse ésta se ve afectada
     fill(amarillo);                  //color de relleno amarillo
     ellipse(300, a, q, q);           //se dibuja una elipse, segun la posición del mouse esta cambia su posición y tamaño
     rectMode(CENTER);                //hace que el rectángulo se dibuje desde el centro
     rect(mouseX, mouseY, 10, 10);    //se dibuja un rectángulo, este se vera como si fuera el cursor
-    strokeWeight(3);                 //grosor de las líneas
-    stroke(a, q, mouseX);            //color de las lineas, se ven afectadas por la posicion del mouse
   }
 }
 void mousePressed() {            //ámbito de click de mouse
   if (negro == color(negro)) {   //si negro es de color negro
-    negro= color(blanco);                //con un click el negro cambia a blanco
+    negro= blanco;                //con un click el negro cambia a blanco
   } else {                       //con otro click
-    blanco=color(negro);                //blanco cambia a negro
+    blanco=negro;                //blanco cambia a negro
   }
 }
 
