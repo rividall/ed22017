@@ -9,7 +9,6 @@ Por último al apretar "a" y "s" se forman triángulos blancos y negros que
 terminan de componer mi fondo.
 */
 
-int i, j; //enteros para for
 
 void setup () {
   size(500, 500); //tamaño canvas
