@@ -1,1 +1,1 @@
-Modificar posicin de funciones con el mouse.
+Modificar posición de funciones con el mouse.
