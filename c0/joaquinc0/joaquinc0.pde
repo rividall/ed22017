@@ -1,14 +1,15 @@
 /*
- Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestre - Expresión Digital II - 13/09/17
+ Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestre
+ - Expresión Digital II - 13/09/17
  c0
  Joaquín Domínguez
- 
- Descripción: Una grilla manipulable con el mouse hecha a partir de elipses que 
- cambian su tamaño y que al hacer click estas cambian de color y el tamaño se 
+
+ Descripción: Una grilla manipulable con el mouse hecha a partir de elipses que
+ cambian su tamaño y que al hacer click estas cambian de color y el tamaño se
  altera radicalmente.
- 
+
  */
- 
+
 int x, h, t; //Declarar variables x, h, t
 color c1;//Declarar variable de color
 int margen; //Declarar variable margen
@@ -33,7 +34,7 @@ void draw() { //Inicio del ámbito de dibujo
       ellipse(i, j, x, x); //elipse en la posición que determinen los loops y de 10 x 10
     }//Fin del loop horizontal
   }//Fin del loop vertical
-  
+
   if (x == 0){ // si x == 0 es verdadero la función se cumple
     t = 0; // t vale 0
   }
