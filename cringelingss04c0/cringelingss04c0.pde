@@ -59,12 +59,12 @@ void draw() {                                                    // void draw() 
 
   noStroke();                                                    // No hay línea, solo relleno.
   fill(bl);                                                      // Relleno del Rectángulo color Blanco (bl = 255).
-  rect(height/k, height/k, mouseY, mouseX);                      // Tamaño y Posición del rectángulo - Tamaño depende de la posición del mouse en el canvas.
+  rect(width/k, height/k, mouseY, mouseX);                      // Tamaño y Posición del rectángulo - Tamaño depende de la posición del mouse en el canvas.
 
-  for (int i = x; i <= height - mouseX; i += k) {                // Se declara i = x. (x =15). Si i es menor o igual al alto menos la posición del mouse en x (mouseX), se suma a i el valor de k (k= 20).
-    for (int j = y; j <= width - mouseY; j += k) {               // Se declara j = y. (y =15). Si j es menor o igual al ancho menos la posición del mouse en y (mouseY), se suma a j el valor de k (k= 20).
+  for (int i = x; i <= width - mouseX; i += k) {                // Se declara i = x. (x =15). Si i es menor o igual al alto menos la posición del mouse en x (mouseX), se suma a i el valor de k (k= 20).
+    for (int j = y; j <= height - mouseY; j += k) {               // Se declara j = y. (y =15). Si j es menor o igual al ancho menos la posición del mouse en y (mouseY), se suma a j el valor de k (k= 20).
       noFill();                                                  // No hay Relleno.
-      stroke(random(100));                                       // Color de la línea es random entre 100 colores.
+      stroke(random(100));                                       // Color de la línea es en escala de gris entre 100 colores.
       strokeWeight(2);                                           // El grosor de esta línea es 2.
       ellipse(i, j, x, y);                                       // Tamaño y posición de las ellipses.
     }
@@ -88,24 +88,18 @@ void draw() {                                                    // void draw() 
   noFill();                                                      // No hay relleno.
   strokeWeight(2);                                               // Grosor de la línea es 2.
   stroke(verde);                                                 // Color de la línea es verde: #B3D170.
-  triangle(c, c*2, c*2, c, mouseX, mouseY);                      // Posición y tamaño del triangle.
+  triangle(c, c * 2, c * 2, c, mouseX, mouseY);                  // Posición y tamaño del triángulo.
 }
 
 void keyPressed() {                                              // Al oprimir cierta tecla cambia algo en especifico.
   if (key == 'q') {                                              // Se apreta la letra 'q' se cambia el color azul de la ellipse a color verde.
     azul = verde;
-  } else {                                                       // Además de lo anterior...
-    if (key == 'w') {                                            // Si se apreta la letra 'w' se cambia el color que tenga de la ellipse al color #70B1D1 (azul) = Vuelve al color azul.
-      azul = #70B1D1;
-    } else {                                                     // Además de las dos cosas anteriores...
-      if (key == 'r') {                                          // Si se apreta la letra 'r', la ellipse comienza a moverse desde el punto (0,0) independientemente del color que tenga.
-        a = 0;
-      } else {                                                   // Ademñas de las 3 cosas anteriores...
-        if (key == 'e') {                                        // Si se apreta la letra 'e', independiente del color que tenga la ellipse antes, se cambiará a color blanco.
-          azul = bl;
-        }
-      }
-    }
+  } else if (key == 'w') {                                       // Si se apreta la letra 'w' se cambia el color que tenga de la ellipse al color #70B1D1 (azul) = Vuelve al color azul.
+    azul = #70B1D1;
+  } else if (key == 'r') {                                       // Si se apreta la letra 'r', la elipse comienza a moverse desde el punto (0,0) independientemente del color que tenga.
+    a = 0;
+  } else if (key == 'e') {                                       // Si se apreta la letra 'e', independiente del color que tenga la ellipse antes, se cambiará a color blanco.
+    azul = bl;
   }
 }
 
