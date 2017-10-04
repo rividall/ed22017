@@ -1,1 +1,1 @@
-Modificar posicin de funciones con el mouse.
+Usar la modifcación de listas y números dentro de sus funciones
