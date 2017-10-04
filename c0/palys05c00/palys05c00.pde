@@ -1,6 +1,6 @@
 // Expresión Digital II - Diseño Digital - UDD - 2017
 // Paulina Descouvieres
-// s05c00paly
+// palyc0
 
 /*
 Al ejecutar la función, se dibuja una grilla con líneas que giran sobre ésta como eje,
@@ -16,8 +16,8 @@ Dot[] d = new Dot[625];                   //Declaración de array que completa c
 int cambio;                               //Declaración de variable de cambio de elementos.
 int l, s;                                 //Declaración de variables de grosor y diámetro.
 
-int c1 = color(111, 197, 166);            //Verde.
-int c2 = color(234, 215, 104);            //Amarillo.
+color c1 = color(111, 197, 166);            //Verde.
+color c2 = color(234, 215, 104);            //Amarillo.
 
 void setup() {
   size(850, 850);                         //Tamaño del canvas.
@@ -55,6 +55,11 @@ void draw() {
 }
 
 void mousePressed() {
+  /*
+  Investigar que significa que una variable global sea modificada en este ámbito
+  para ser usada como local dentro de una función de una clase.
+  Cuestionar si es el mejor camino éste, y proponer uno mejor, si existe.
+  */
   if (l == 1) {                           //Función condicional para grosor de la líneas de 1 px.
     l = 5;                                //Cambiar grosor a 5 px.
   } else {
@@ -88,7 +93,7 @@ void keyPressed() {
   if (key == 'n') {                       //Función condicional para tecla 'n'.
      c2 = color(r, g, b);                 //Cambio de color de las elipses.
   }
-  
+
   if (key == 'q') {                       //Función condicional para tecla 'q'.
     exit();                               //Cerrar la ventana.
   }
