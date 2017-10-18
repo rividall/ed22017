@@ -6,7 +6,7 @@ Universidad del Desarrollo - Facultad de Diseño - Diseño Digital -
  s05t00
  
  Se le pide al alumno diseñar tres funciones con complejidad y control formal y estético,
- incorporando boolean a la interración del programa y funciones.
+ incorporando boolean a la interación del programa y funciones.
  Al correr el programa podrán ver a primera vista las tres funciones creadas llamadas, 
  cruz, diagonales y circulos, una al lado de la otra. Las cuales al presionar la tecla 
  "c" cambiaran de color, y de ubicación, siendo de la siguiente la menera. Si la función
@@ -73,7 +73,8 @@ void cruz(int x, int y, color b, color n, color c) { // Se inicializa la funció
   line(x -200, y, x +200, y); // Se dibuja la línea.
 }
 
-void diagonales (int x, int y, color r, color c, color n) { // Se inicializa función diagonales.
+void diagonales (int x, int y, color r, color c, color n) { // Se inicializa función 
+                                                            // diagonales.
   // Línea vertical.
   stroke(c); // Se indica el color de la línea.
   strokeWeight(15); // Se indica el tamaño de la línea.
@@ -108,7 +109,8 @@ void diagonales (int x, int y, color r, color c, color n) { // Se inicializa fun
   ellipse(x +400, y, 50, 50); // Se dibuja la ellipse.
 }
 
-void circulos(int x, int y, color r, color c, color b) {  // Se inicializa la función circulos.
+void circulos(int x, int y, color r, color c, color b) {  // Se inicializa la función 
+                                                         //circulos.
   //Línea horizontal
   stroke(c); // Se indica el color de la línea.
   strokeWeight(15); // Se indica el tamaño de la línea.
@@ -123,7 +125,8 @@ void circulos(int x, int y, color r, color c, color b) {  // Se inicializa la fu
   stroke(b); // Se indica el color del borde.
   strokeWeight(15); // Se indica el tamaño del borde.
   noFill(); // Se indica que en este caso no se necesita relleno.
-  quad(x +650, y -150, x +950, y -150, x +950, y +150, x +650, y +150); // Se dibuja el quad.
+  quad(x +650, y -150, x +950, y -150, x +950, y +150, x +650, y +150); // Se dibuja el 
+                                                                        //quad.
 
   //Ellipses
   noStroke(); // Se indica que no se requiere del borde.
@@ -168,6 +171,7 @@ void circulos(int x, int y, color r, color c, color b) {  // Se inicializa la fu
 }
 
 void keyPressed() { // Se da inicio a las variables de teclas.
-  if (key == 'c') // Si la tecla es igual a la que se presiona, se cambiarán las funciones
+  if (key == 'c') // Si la tecla es igual a la que se presiona, se cambiarán las 
+                  //funciones
     c = (!c);
 }
