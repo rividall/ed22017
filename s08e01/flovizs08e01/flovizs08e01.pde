@@ -4,7 +4,7 @@ int x;
 int y;
 
 int[]numeros = new int [4];
-color[]colores = new color[4];
+color[]colores = new color [4];
 
 int eleccionNumeros;
 int eleccionColores;
