@@ -1,15 +1,12 @@
 // Universidad Del Desarrollo, Facultad de Diseño, Diseño Digital.
 /* Se pide entregar un programa en donde se pueda modificar una grilla
- por medio de input de mouse y el teclado, y que una vez el programa no reciba 
+ por medio de input de mouse y el teclado, y que una vez el programa no reciba
  input, este tenga un cambio cíclico.*/
 /* Propuesta: Grilla de cuadrados y elipses palpitantes, centradas en medio del
  canvas, y diagramada en los 4 puntos medios de un diamante central.
- Esta grilla aumentará en numero y posicion dependiendo de la posicion del cursor,
- su linea engrosara con la letra 'a' hasta un máximo de 5 y disminuirá con la letra 's'.
- las elipses aumentarán tamaño con la letra 'q', disminuirán con 'w' y se reiniciarán
- con 'e'.
- El cursor no es visible en caso de no saber donde está el cursor actualmente se puede
- hacer click para mostrarlo.*/
+ Esta grilla aumentará en número y posición dependiendo de la posición del cursor, su línea engrosara con la letra 'a' hasta un máximo de 5 y disminuirá con la letra 's'.
+ Las elipses aumentarán tamaño con la letra 'q', disminuirán con 'w' y se reiniciarán con 'e'.
+ El cursor no es visible en caso de no saber donde está el cursor actualmente se puede hacer click para mostrarlo.*/
 
 int a, b, c, d, e, f; // Declaramos nuestras variables base.
 int var1, var2; // Declaramos las variables que se usarán para el cursor.
@@ -31,7 +28,7 @@ void draw() {
   var2 = mouseY;
   background(0, 0, 1); // Definimos el fondo del canvas como negro
   stroke(miColor3); // Usamos las variables definidas para crear un diamante azul en el centro del canvas.
-  noFill();     // Sin relleno 
+  noFill();     // Sin relleno
   strokeWeight(1); // grosor de linea 1
   quad(0, height/2, width/2, 0, width, height/2, width/2, height); // Dado por los puntos medios de los extremos del canvas.
 

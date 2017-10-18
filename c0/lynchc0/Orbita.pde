@@ -18,7 +18,7 @@ class Orbita {
 
     float d = dist(mouseX, mouseY, posX, posY);
     float dMap = map(d, 0, 100, 0, 15);  // Estas funciones calculan la distancia desde cada elipse hasta el mouse.
-    fill((px/4)+1, 0, (py/4)+1);
+    fill((px/4)+1, 0, (r)+1);
     ellipse(px, py, dMap*2, dMap*2); // Elipse orbital.
 
     fill(11,0,11);  // Elipse vacío.
@@ -26,9 +26,10 @@ class Orbita {
   }
 
   void moveOrbita() { // Esta función mueve los elipses en una orbota alrededor del elipse del fondo.
-    velX = .06;
-    px = r * cos(a) + (posX);  
+    velX = .006;
+    px = r * cos(a) + (posX);
     py = r * sin(a) + (posY); // Movimiento no lineal.
-    a += velX; 
+
+    a += velX;
   }
 }
