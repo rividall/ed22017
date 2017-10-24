@@ -7,10 +7,10 @@ color dorado;
 
 
 void setup() { 
-  x=1; // Valor inicial de x es 1.
-  y=300; // Valor inicial de y es 300.
-  v1=6; // Cuanto va a avanzar x.
-  v2=6; // Cuanto va a avanzar y.
+  x = 1; // Valor inicial de x es 1.
+  y = 300; // Valor inicial de y es 300.
+  v1 = 6; // Cuanto va a avanzar x.
+  v2 = 6; // Cuanto va a avanzar y.
   morado = color(114, 19, 102); // se declara el rgb de morado
   dorado = color(234, 160, 13); // se declara el rgb de dorado
   fill(morado); // El relleno será morado por defecto.
@@ -20,6 +20,7 @@ void setup() {
 
 void draw() {
   background(0, 0, 1); // el color del background será negro y se pondrá en cada frame, para que se actualize y se vea solo la forma.
+  // los fill van acá. el cambio de variable de color va en los if
   ellipse(x, y, 30+v1*3, 30+v2*3); // dibujar una elipse de centro (x, y) y de tamaño dependiente de v1 para que varíe 
   if (x > width || x < 0) { // si x llega  a un extremo la función se cumple.
     v1 *= -1; // se multiplica v1 para alternar a negativo.
