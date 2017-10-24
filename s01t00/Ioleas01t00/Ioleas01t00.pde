@@ -1,4 +1,4 @@
-
+// nombre de autor y descripción, colores
 size(500, 500);
 
 ellipse(50, 50, 50, 50) ;

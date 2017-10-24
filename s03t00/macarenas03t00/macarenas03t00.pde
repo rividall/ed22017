@@ -42,6 +42,7 @@ void draw() { // inicio ámbito de dibujo
   if (x > 500 || x < 0) { // si x es mayor a 500 o x es menor a 0 es verdadero
     vx *= -1; // velocidad x multiplicada -1
     c = color(amarillo); // cambia al color amarillo 
+    // esta función debió trabajar igual que las variables de color
     strokeWeight(5); // grosor del borde en el eclipse
   } else if (y > 500 || y < 0) { // si y es mayor a 500 o y es menor que 0 es verdadero
     vy *= -1; // velocidad y multiplicada -1

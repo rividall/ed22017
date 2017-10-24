@@ -36,6 +36,7 @@ void draw(){
   background(100);       //color de fondo gris
   
   strokeWeight(sw);     //grosor de stroke
+  fill(rosado);              // solo debes cambiar el valor de la variable
   ellipse(px,py,5,5);   //elipse
   ellipse(px,px,7,7);   //elipse
   ellipse(py,px,9,9);   //elipse
@@ -43,10 +44,11 @@ void draw(){
   
   if (px > width || px < 0){   // si px es mayor al ancho de la pantalla o menor a 0...
     vx *=-1;                   //vx se invierte
+    // no ocurre 
     fill(rosado);              //cambia a color rosado
   }
   
-  if ( py > width || py < 0){  //si py es mayor al ancho de la pantalla o menor a 0...
+  if ( py > height || py < 0){  //si py es mayor al ancho de la pantalla o menor a 0...
     vy *=-1;                   //vy se invierte
     fill(amarillo);            //cambia a color amarillo
   }

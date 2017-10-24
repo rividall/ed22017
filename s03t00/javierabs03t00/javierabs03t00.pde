@@ -17,6 +17,7 @@ void setup() { //Inicio setup
   w = height/2; //Variable w es la mitad de la altura
   se = 2; // Variable se es el ancho partido en dos
   sr = 2; // Variable sr es la altura partida en dos 
+  // inneesario para el nivel de programa
   frameRate(150); // Tasa de cuadros x seg a 150
   noStroke(); //Quitar el borde negro del circulo
   
