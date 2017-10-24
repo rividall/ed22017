@@ -93,6 +93,7 @@ void draw() {
 }
 
 void keyPressed() {
+  // unir el comportamiento en una sola tecla, añadir más complejidad
   if (key =='a') {
     p=true;
   }
