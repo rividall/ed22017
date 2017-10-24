@@ -1,3 +1,4 @@
+// nombre de autor y descripción
 size(800,600);
 noStroke ();
 fill(232,150,68);
