@@ -1,3 +1,4 @@
+// nombre de autor
 //Semana 01, tarea 00
 rect(20,55,10,20);
 rect(10,10,80,80);
@@ -16,6 +17,6 @@ ellipse(50,30,10,10);
 line(50,50,50,10);
 rect(20,55,10,15);
 
-fill(200,34,0);           //colorear(r,g,b) , valores entre 0 y 255 
+fill(200,34,0);           //colorear(r,g,b) , valores entre 0 y 255
 ellipse(75,50,20,20);
 rect(27,85,45,8);
