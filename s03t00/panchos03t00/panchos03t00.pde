@@ -3,8 +3,8 @@
 //panchos03t00
 /*
 En un canvas rectangular una esfera rebota de un lado a otro cambiando de color en cada bote.
-Dentro de la esfera esta cambia de color y tamaño de su centro.
-*/
+ Dentro de la esfera esta cambia de color y tamaño de su centro.
+ */
 
 int a;                                        // Timer.
 boolean t, k, r;                              // Sentidos de los botes.
@@ -38,13 +38,13 @@ void draw() {
     x = x + r1;
   } else {
     x = x - r1;
-  };
+  }
 
   if (k == false) {                                  //Bote vertical.
     y = y + r2;
   } else {
     y = y - r2;
-  };
+  }
 
   fill(255, 255);                                    // Esfera.
   ellipse(x, y, 30, 30);
@@ -64,7 +64,7 @@ void draw() {
     } else if (!t) {
       t = true;
     }
-  };
+  }
 
   if (y > (height/2)-15 || y < (-height/2)+15) {    // Limites verticales.
 
@@ -75,7 +75,7 @@ void draw() {
     } else if (!k) {
       k = true;
     }
-  };
+  }
 
   if (r == false) {                                // Cambio de color.
 
@@ -94,7 +94,7 @@ void draw() {
 
 
   fill(0, 8);
-  quad(-width/2, -height/2,                       // Fade Out.
+  quad(-width/2, -height/2, // Fade Out.
     width/2, -height/2, 
     width/2, height/2, 
     -width/2, height/2);

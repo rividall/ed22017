@@ -1,3 +1,4 @@
+// comentarios
 int ancho = 50;
 int alto = 50;
 int posX = 0;

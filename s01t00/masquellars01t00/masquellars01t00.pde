@@ -1,4 +1,4 @@
-
+// nombre de autor y descripción, colores, diseño
 size(500,500);
 point(122,50);
 ellipse(130,140,150,160);

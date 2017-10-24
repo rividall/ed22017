@@ -1,3 +1,4 @@
+// nombre de autor
 size(500, 500);
 noFill();
 rect(10, 10, 120, 130); 

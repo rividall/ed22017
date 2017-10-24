@@ -20,6 +20,7 @@ void setup () {                   // void setup() se efectua al iniciarlo.
 
 void draw() {                    // Se inicia el ámbito de dibujo.
   background(ngr);               // Fondo de color negro (ngr = 0;)
+  stroke(azul); // debes cambiar el valor de la variable
   line(a, b, a + 15, b + 15);    // Tamaño y Posición de la Línea
   strokeWeight(15);              // Groso de la Línea
   

@@ -1,3 +1,4 @@
+// nombre de autor y descripción, colores, diseño
 void setup(){
   
   background(255,30,30);

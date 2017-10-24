@@ -24,12 +24,14 @@ void setup() {
   velY = 3;                      //Velocidad de 3 en el eje Y
 
   c = color(255);                //Asignación de color blanco a la variable 'c'
+  // es más óptimo que sea global
+  noStroke();                    //Sacarle el borde a la elipse
 }
 
 void draw () {
   background(123);               //Pintar el fondo de color gris
   fill(c);                       //Relleno de la elipse con la variable 'c'
-  noStroke();                    //Sacarle el borde a la elipse
+  
   ellipse(x, y, d, d);           //Elipse con posición de las variables 'x' e 'y', de radio 'd'
 
   x += velX;                     //Suma a 'x' el valor de 'velX'. Esto reemplaza 'x += 2'
