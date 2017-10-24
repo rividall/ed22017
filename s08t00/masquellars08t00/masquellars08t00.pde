@@ -1,3 +1,4 @@
+// muy difícil de entender todo
 //#AA4225 rojo
 //#058789 verde
 //#030303 negro
