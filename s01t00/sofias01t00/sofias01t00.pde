@@ -1,4 +1,4 @@
-
+// nombre de autor y descripción, colores
 size(100,100);
 background(400);
 strokeWeight(2);
