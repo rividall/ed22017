@@ -1,3 +1,4 @@
+// nombre de autor y descripción, colores
 size(400, 400);
 quad(50, 50, 100, 50, 50, 150, 100, 150);
 line(75, 50, 100, 100);
