@@ -1,3 +1,4 @@
+// nombre de autor y descripción, colores
 ellipse (25,25,40,40);
 ellipse (80,80,30,30);
 

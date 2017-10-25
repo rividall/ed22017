@@ -1,3 +1,4 @@
+// nombre de autor y descripción, colores
 rect(10, 10, 80, 80);
 ellipse(50, 50, 50, 50);
 point(45, 45);
