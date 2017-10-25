@@ -1,9 +1,10 @@
 class Joaquin {
-  boolean t = false;
+  
+  //Se declaran las variables
   int x, y, s;
   int vx, vy;
 
-  Joaquin(int w, int h) {
+  Joaquin(int w, int h) { //se le asignan valores a las variables
     vx=(int)random(-15, 15);
     vy=(int)random(-15, 15);
     x = w;
@@ -13,12 +14,12 @@ class Joaquin {
 
 
 
-  void pokebola() {
+  void pokebola() { //funcion que llama a las otras funciones y la convierte en una sola
     movimiento();
     tres();
     keyPressed();
   }
-  void movimiento() {
+  void movimiento() { //parametros de rebote
     if (x > width || x < 0) {
       vx *= -1;
     }
@@ -29,7 +30,7 @@ class Joaquin {
     y += vy;
   }
 
-  void tres() {
+  void tres() { //dibujo de la pokebola
     //función 3
     fill(255, 0, 0);
     arc(x, y, s, s, PI, PI*2, CHORD);
@@ -37,7 +38,10 @@ class Joaquin {
     arc(x, y, s, s, 0, PI, CHORD);
     ellipse(x, y, s - 177, s - 177);
   }
-  void keyPressed() {
+
+  void keyPressed() { /*Teclas que alteran la posición de 
+   las pokebolas para hacer explosione*/
+
     if (key=='q') {
       x = 50;
       y = 50;
@@ -57,5 +61,5 @@ class Joaquin {
       x = x + vx;
       y = y + vy;
     }
-    }
   }
+}
