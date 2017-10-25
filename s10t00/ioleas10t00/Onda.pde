@@ -31,14 +31,21 @@ class Onda {
   }
 
   void expandirblanco() {
-    x1 = nospeed;
-    y1= nospeed;
+    
+   
     
     if (x > 250 || x1 > 0) {
-      x1 = speed;
+      x1 = x1 + speed;
     }
     if (y > 250 || y1 > 0) {
-      y1 = speed;
+      y1 =  y1 + speed;
+      
+      if (y1 > 500){
+        y1 = 0;
+        if ( x1 > 500) { 
+          x1 = 0;
+        }
+      }
     }
   }
 
