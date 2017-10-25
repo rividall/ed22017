@@ -1,4 +1,4 @@
-//VARIABLES
+//VARIABLES Falta poner el nombre
 Sofia [] s = new Sofia[15];
 
 void setup() {
