@@ -1,3 +1,4 @@
+// entregar lo mismo de tareas anteriores no es hacer una nueva tarea
 // Universidad del Desarrollo, Facultad de Diseño, Diseño Digital
 // Natalia Malsch Coelho
 // conjunto de funciones
