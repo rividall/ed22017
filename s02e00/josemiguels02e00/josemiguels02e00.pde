@@ -1,3 +1,4 @@
+
 //s02e00
 
 int x, r, g, b; //declarado
