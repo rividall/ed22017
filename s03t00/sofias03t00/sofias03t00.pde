@@ -2,10 +2,7 @@
 // Sofía Oller Vidal
 // Elemento que rebote en cuatros bordes y que vaya cambiando de color cada vez que rebote
 
-color negro;
-color blanco;                                 // estoy diciendo que cuando llame a este color será con este nombre
-color rosado;                                 // estoy diciendo que cuando llame a este color será con este nombre
-color celeste;                                // esto diciendo que cuando llame a este color será con este nombre
+color negro, blanco, rosado, celeste;                                // esto diciendo que cuando llame a este color será con este nombre
 
 int x, y;                                     // nombrando las variables
 int vely, velx;                               // nombrando nuevamente las variables
@@ -22,7 +19,7 @@ void setup() {                                // inicio área de seteo
   celeste = color (115, 221, 252);            // declarando color celeste
   negro = color (0, 0, 0);                    // declarando color negro
   rosado = color (232, 102, 247);             // declarando color rosado
-}
+  }
 
 void draw() {                                 // inicio área de dibujo
   fill(pelota);                               // declaro el color de la ellipse
@@ -47,6 +44,8 @@ void draw() {                                 // inicio área de dibujo
 
   y += vely;                                // x aumenta su valor
   x += velx;                                // y aumenta su valor
+
+  // agrupar en funciones de color si las diferentes figuras lo comparten
 
   // triángulo 1
   stroke (negro);                           // declarando el color del borde
