@@ -17,6 +17,7 @@ float bw = 50; // Alto y ancho de elipses
 void setup () {
   background (0);
   size (500, 500); // Setup inicial de fondo y tamaño.
+  // es mejor aumentar la variable de velocidad y el efecto se cumple, los frameRate van hacia la calidad del movimiento
   frameRate (150); // Aumentar un poco la velocidad.
 
   // Posiciones elipses.
@@ -28,7 +29,6 @@ void setup () {
 }
 
 void draw () {
-
   x += speed*directionx;
   y += speed*directiony; // Añadir movimiento.
 
@@ -38,7 +38,7 @@ void draw () {
     directionx *= -1;
   }
 
-  if (y>height-bh/2 || y<25) {
+  if (y > height-bh/2 || y < 25) { // dude! los espacios
     directiony *= -1;
   }
 
@@ -50,7 +50,7 @@ void draw () {
 
  // Rebotes segunda elipse.
 
-  if (w>width-bh/2 || w<25) {
+  if (w>width-bh/2 || w < 25) { // plisss
     directionw *= -1;
   }
 

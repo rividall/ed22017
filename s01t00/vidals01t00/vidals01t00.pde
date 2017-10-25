@@ -1,3 +1,4 @@
+// nombre de autor y descripción, colores
 // comentarios
 int x = width/5;
 
