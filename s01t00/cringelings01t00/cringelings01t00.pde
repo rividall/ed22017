@@ -1,3 +1,5 @@
+// comentarios
+
 size (500, 500);
 background (255);
 point (50, 50);
