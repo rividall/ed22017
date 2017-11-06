@@ -8,9 +8,9 @@ Explicación interactiva:
  tenemos dos circunferencias generadas por unas series de círculos que también se 
  encuentran en constante movimiento, y que al apretar el mouse cada circulo que 
  compone esta circunferencia cambia su eje Z de 0 a mouseY/8, y el diametro de la 
- circuferencia mas pequeña varia según el eje X del mouse. Además hay 6 círculos 
+ circunferencia mas pequeña varia según el eje X del mouse. Además hay 6 círculos 
  que cambian su plano Z en relación al eje Y del mouse, lo cual también sucede con 
- todos los elementos de la composicion, y si apretamos “d” su tamaño cambia a 150 y 
+ todos los elementos de la composición, y si apretamos “d” su tamaño cambia a 150 y 
  si apretamos “f” este vuelve a medir 550. Y con i guardamos la composición como pdf, 
  pero este no guarda el plano Z en el pdf. 
  
@@ -82,7 +82,7 @@ void draw() {
 
 
   translate(width/2, height/2); //Trasladamos a la mitad de nuestra composición. 
-  for (int x = 0; x < 360; x = x + 45) {  // Creacion de un for circular donde cada objeto tendra 45 grados de diferencia.
+  for (int x = 0; x < 360; x = x + 45) {  // Creación de un for circular donde cada objeto tendrá 45 grados de diferencia.
     rotate(radians(x)); // La x del for la multiplicamos por radianes (radians) la cual a su vez es rotada, lo cual hace posible que este for sea circular.
     circulo (1, frameCount * .5); // Llamamos al "void circulo" y asignamos los valores de sus variables.
     movimiento(); // Llamamos al "void movimiento".
@@ -100,7 +100,7 @@ void circulo (float amt, float a) { // Creación del “void circulo” y  decla
   noStroke();
   translate(0, 0, z); // Profundidad de nuestros elementos (eje Z).
   ellipse(amt * cos(a)*5, width/2, 10, 10); // Usamos "cos" para crear un movimiento en bucle del circulo
-  ellipse(amt * cos(a)*5, mouseX/6, 10, 10); // Gracias al mouseX puesto en su eje "Y", podemos manipular el diametro de la circunferencia.
+  ellipse(amt * cos(a)*5, mouseX/6, 10, 10); // Gracias al mouseX puesto en su eje "Y", podemos manipular el diámetro de la circunferencia.
 }
 
 void movimiento() { 
@@ -131,9 +131,9 @@ void texto() {
   textSize(10);  // Texto explicativo de las acciones que se pueden hacer.
   fill(miColor3);
   text("mouseY: Acercamiento al eje Z (zoom).", width/15, height/150 + 30); 
-  text("mousePressed: Los circulos de la circuferencia mas pequeña cambian su disntan del eje Z.", width/15, height/150 + 45);
+  text("mousePressed: Los círculos de la circunferencia mas pequeña cambian su disntancia del eje Z.", width/15, height/150 + 45);
   text("a: Opción uno para rotar el cubo.", width/15, height/150 + 60); 
   text("s: Segunda opción para rotación del cubo.", width/15, height/150 + 75); 
-  text("d: Primera opción pra el tamaño de los circulos.", width/15, height/150 + 90);
-  text("f: Segunda opción para los tamaños de los circulos.", width/15, height/150 + 105);
+  text("d: Primera opción para el tamaño de los círculos.", width/15, height/150 + 90);
+  text("f: Segunda opción para los tamaños de los círculos.", width/15, height/150 + 105);
 }

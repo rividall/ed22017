@@ -26,7 +26,7 @@ class Cata {
     strokeWeight(1);
     noFill();
     pushMatrix();
-    translate(x, y - m, mouseY/3); // El mouseY define la distacia con el eje Z.
+    translate(x, y - m, mouseY/3); // El mouseY define la distancia con el eje Z.
     rotateY(velx);
     rotateX(r);
     stroke(miColor3);

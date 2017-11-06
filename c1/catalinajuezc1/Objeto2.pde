@@ -11,7 +11,7 @@ class Cata2 {
     miColor3= color(83, 83, 82);
     x = width/2;
     y = height/2;
-    tam = 550;  // Tamaño circulos.
+    tam = 550;  // Tamaño círculos.
   }
 
   // Metodos
@@ -34,7 +34,7 @@ class Cata2 {
     velx += 2;
   }
 
-  void keyPressed () { // Al apretar "d" o "f" el tamaño de los circulos cambia.
+  void keyPressed () { // Al apretar "d" o "f" el tamaño de los círculos cambia.
     if (key == 'd') {
       tam = 150;
     }
