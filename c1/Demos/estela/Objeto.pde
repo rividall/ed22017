@@ -46,7 +46,7 @@ class Objeto {
 	}
 	// ----------------------------------------------------
 
-	//LO MISMO NUEVO --------------------------------------
+	//LO NUEVO --------------------------------------
 	/*se pasa por los arrays que están siendo modificados en void m
 		y se sobre escribe la casilla [i] con el valor siguiente
 	*/
