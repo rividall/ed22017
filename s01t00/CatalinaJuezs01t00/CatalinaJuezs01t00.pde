@@ -1,4 +1,4 @@
-int x= 200;
+int x = 200;
 void setup() {
   size (200, 200);
   background(255);
@@ -9,7 +9,7 @@ void draw() {
   fill(200, 100, 100);
   strokeWeight (2);
   rectMode(CENTER);
-  
+
   ellipse(x/2, x/2, x, x);
   quad(x/2, x, 0, x/2, x/2, 0, x, x/2 );
   rect(x/2, mouseY, 20, 20);

@@ -5,11 +5,7 @@
 
 int x, y; //se declaran las variebles enteras
 float velx, vely; // se declaran las variables de velocidad
-color blanco; //se define color
-color negro; //se define color
-color verde; //se define color
-color naranjo; //se define color
-
+color blanco, negro, verde, naranjo; // colores
 
 void setup() { //inicio ambito set up
   size (500, 500); //tamaño de canvas
@@ -56,19 +52,22 @@ void draw() { //comienza a dibujar
     velx *= -1;
    }
   if (y > 480|| y < 15|| x > 480|| x < 20){ //condicional, si y y x es mayor al tamaño del rect grande o si son menor al mismo, se cambia el relleno y contorno de la ellipse
-    fill(255, 0, 0);  
+    fill(255, 0, 0);
+    // si la elipse se mueve siempre, no debes dibujar otra encima.
     ellipse (x, y, 50, 50);
     
   }
   if (y > 480|| y < 15|| x > 480|| x < 20){ //condicional, si y o x es mayor al tamaño del rect grande o si son menor al mismo, se cambia el color del contorno del rect mas grande
  blanco= negro;
  }
-  if (y > 90&& x > 90){ //condicional, si y es mayor al tamaño del rect chico y si x es mayor al mismo, cambia de color y contorno la ellipse
+  if (y > 90 && x > 90){ //condicional, si y es mayor al tamaño del rect chico y si x es mayor al mismo, cambia de color y contorno la ellipse
+    // solo debes cambiar el valor de la variable
     fill(verde);
     stroke(naranjo);
     
   }
    else if ( y < 290|| x < 290){ // si x es menor al tamaño del rect chico o si x es menor al mismo, cambia de color y contorno la ellipse
+    // solo debes cambiar el valor de la variable
     fill(naranjo);
     stroke(verde);
     ellipse(x, y, 40, 40);

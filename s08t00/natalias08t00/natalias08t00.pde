@@ -1,3 +1,4 @@
+// entregar lo mismo de tareas anteriores no es hacer una nueva tarea
 // Universidad del Desarrollo, Facultad de Diseño, Diseño Digital
 // Natalia Malsch Coelho
 // conjunto de funciones
@@ -88,7 +89,7 @@ void draw() {
 
 void mousePressed() { //al hacer clic se ven las líneas verticales en el triángulo
   //este for es para las líneas verticales
-for (int i=0; i<900; i +=10) { //primero marca punto de inicio de primera fila (0), i llega hasta los 500 y la distancia entre cada uno son 10
+for (int i = 0; i < 900; i += 10) { //primero marca punto de inicio de primera fila (0), i llega hasta los 500 y la distancia entre cada uno son 10
       stroke(#000000); //lineas color negro
       strokeWeight(fl); //lineas grosor 0.5
       line (i, 0, i, 500); //parte en el punto 0 (eje x) y termine en el 500 (eje x)

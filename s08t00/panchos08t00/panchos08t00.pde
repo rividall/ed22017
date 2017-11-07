@@ -1,3 +1,5 @@
+// comentarios
+
 int x, y, z, i, j, i2, j2, a, func;
 float r, s, t, units, meta;
 boolean b;
