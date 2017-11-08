@@ -1,7 +1,7 @@
 /*Universidad del Desarrollo / Facultad de Diseño / Diseño Digital / 6to semestre / 
  Expresión Digital II / Certamen 01 - 08.11.2017 / Josefina Squella R.T.
  
-
+ 
  Se pide entregar un programa en donde se pueda modificar el comportamiento de  objetos
  por medio de input de mouse y el teclado, y que una vez el programa no  reciba input, 
  este tenga un cambio cíclico. Los comportamientos a diseñar tienen que  ser relacionados
@@ -9,7 +9,7 @@
  vuelo. */
 
 import processing.pdf.*;//Crear PDF.
-boolean guardarpdf, o, y;//Variables de boolean.
+boolean guardarpdf, o, y, t;//Variables de boolean.
 float f, j, d, s, g, u, b;//Variables de Float.
 color[] r = new color[5];//Array con 5 variables de color.
 color eleccionColor;//resultado array, Variable de color.
@@ -34,10 +34,10 @@ void setup() {
   d = 1;
   u = 0;
   b = 8;
- 
+
   o= true;//se declara variable como verdadera
   y = true;//se declara variable como verdadera
-
+  t = true;
 
   background(#ffffc0);
 }
@@ -47,11 +47,11 @@ void draw() {
     beginRecord(PDF, "masquellarc01.pdf");
   }
 
-//rectangulo con tranparencia para crear las estelas
+  //rectangulo con tranparencia para crear las estelas
   fill(#ffffc0, 80); 
   rect(0, 0, 517, 800);
 
-//Patron de líneas horizontales y verticales
+  //Patron de líneas horizontales y verticales
   translate(10, 0);
   for (int i = 0; i < 100; i+=5) {
     for (int j =0; j < 100; j+=5) {
@@ -87,56 +87,73 @@ void draw() {
   }
 
 
-//Movimiento de y en las pelotas
+  //Movimiento de y en las pelotas
   g-=5;
   if (g < -400 ) {
     g=0;
   }
-//loop de pelotas
-  if (j > -200) {
-    for (int i = 0; i< 250; i += 20) {
-      for (int j = 0; j<550; j+=100) {
-        p.pelota1(i  + 120 + u, j+random(10) + g + 500, b, r[eleccionColor]);
-      }
+  //loop de pelotas
+
+  for (int i = 0; i< 250; i += 20) {
+    for (int j = 0; j<550; j+=100) {
+      p.pelota1(i  + 120 + u, j+random(10) + g + 500, b, r[eleccionColor]);
     }
   }
-
+if(j < 100||j > 600){
+  j= 0;}
+ 
   popMatrix(); 
-//Límite de pelotas
+  //Límite de pelotas
   fill(#ffffc0);
-  rect(0, 0, 517, 100);
+ rect(0,0, 517, 100);
   rect(0, 640, 517, 200);
   rect(-10, 0, 30, 800);
-//boolean que hace desaparecer las pelotas
+  //boolean que hace desaparecer las pelotas
   if (o) {
     b = 8;
   }
   if (!o) {
     b = 0;
   }
-//boolean que hace cambiar la x de las pelotas
+  //boolean que hace cambiar la x de las pelotas
   if (y) {
     //u  = cos(radians(u)) + frameCount ++;
     u = 0;
   }
 
   if (!y) { 
-    u  = cos(radians(u)) + frameCount ++;
-    u=20;
+    //u  = cos(radians(u)) + frameCount ++;
+    //u=20;
+    for (int i = 0; i< 250; i += 20) {
+      for (int j = 0; j<550; j+=100) {
+        p.pelota1(i  + 120 + 30, j+random(10) + g + 500, b, r[eleccionColor]);
+      }
+    }
+    if(j < 100||j > -500){
+  j= 0;}
   }
   if (u > 280) {
     u += 1;
-  }  
-
-  //n.junta(d);
-  //if (d < -380){
-  //d=0;}
-  //d--;
-
-  if (guardarpdf) {
-    endRecord();
-    guardarpdf = false;
   }
+
+  
+  
+fill(#ffffc0);
+rect(0, 600, 517, 300);
+
+
+
+
+
+//n.junta(d);
+//if (d < -380){
+//d=0;}
+//d--;
+
+if (guardarpdf) {
+  endRecord();
+  guardarpdf = false;
+}
 }
 
 void keyPressed() {
@@ -151,11 +168,12 @@ void keyPressed() {
 
   if (key == 'a') {
     y = !y;
+  
   }
   if (key == 'p') {
     guardarpdf = !guardarpdf;
   }
 } 
-    void mousePressed() { //Sí se preciona el mouse, el ancho de las lineas cambia.
+void mousePressed() { //Sí se preciona el mouse, el ancho de las lineas cambia.
   o = !o;
-  }
+}
