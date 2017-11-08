@@ -11,7 +11,7 @@ P - Imprime codigo.
 MOUSE = GENERADORES DE OLA.
 */
 
-/*Programa inspirado en el atardecer en los 70. Se podrá apreciar una ola de lineas blancas,
+/*Programa inspirado en el atardecer en los 70. Se podrá apreciar una ola de líneas blancas,
 un cielo naranjo, y un mar de puntas azules hasta la ola blanca. Adicionalmente se puede controlar
 las olas para generar una noche o un atardecer con el mouse.
 */
