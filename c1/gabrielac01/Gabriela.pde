@@ -1,8 +1,10 @@
+//Inicalización clase
 class Gabriela {
   int margen, value;                                                             
   float x, y, z, r;                                                             
   color t, b, v, n;                 // Se declaran las variables de color
 
+//Constructor
   Gabriela() {
     t = color(63, 201, 188);    //Turqueza              
     b = color(255);          //Blanco                         
@@ -15,6 +17,7 @@ class Gabriela {
     value = 0;
   }
 
+//inicialización ámbito spiral
   void spiral() {
     stroke(t);
     strokeWeight(4);
@@ -27,7 +30,7 @@ class Gabriela {
     }
   }
 
-
+//inicialización ámbito teclado
   void keyPressed() {
     if (key == 't') {  
       background(b);
