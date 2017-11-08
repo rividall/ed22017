@@ -15,16 +15,10 @@ void setup() {
   c = color(#2C9EFF, 30);
   for (int i = 0; i < n.length; i++) { //Se crean las esferas
     n[i] = new Joaquin(0, i*10);
+  beginRecord(PDF, "nombre_del_archivo.pdf"); //se comienza la grabación de las figuras
   }
 }
 void draw() {
-
-
-  if (print) {
-    beginRecord(PDF, "nombre_del_archivo.pdf");
-    background(#E0F1FF);
-  }
-
   for (int i = 0; i < n.length; i++) { //Dibujo de las esferas
     n[i].pelota();
     n[i].onda(ond, frameCount*ang); //Cambio en el movimiento
@@ -34,10 +28,7 @@ void draw() {
     endRecord();
     print=false;
   }
-  if (print == true){
-  saveFrame("joaquinc1.tiff");
-  }
-  println(frameRate);
+
 }
 void keyPressed() { //Se declaran las teclas a utilizar y las alteraciones que provocan
 
