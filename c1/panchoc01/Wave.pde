@@ -121,23 +121,7 @@ class Wave {
       omega_y = mouseY-(height/2);
     }
   }
-  void teclas() {
 
-    if (key == CODED) {
-      if (keyCode == UP) {
-        magnitude_a= magnitude_a+1;
-      }
-      if (keyCode == DOWN) {
-        magnitude_a= magnitude_a-1;
-      }
-      if (keyCode == RIGHT) {
-        speed_a = speed_a +1;
-      }
-      if (keyCode == LEFT) {
-        speed_a = speed_a -1;
-      }
-    }
-  }
   void ocean() {
     noStroke();
     fill(ocean);
@@ -159,5 +143,22 @@ class Wave {
       fill(220, 0, 126);
     }
     rect(-(width/2), -(height/2), width, height);
+  }
+  void teclas() {
+
+    if (key == CODED) {
+      if (keyCode == UP) {
+        magnitude_a= magnitude_a+1;
+      }
+      if (keyCode == DOWN) {
+        magnitude_a= magnitude_a-1;
+      }
+      if (keyCode == RIGHT) {
+        speed_a = speed_a +1;
+      }
+      if (keyCode == LEFT) {
+        speed_a = speed_a -1;
+      }
+    }
   }
 }
