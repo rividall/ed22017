@@ -1,18 +1,18 @@
-/*Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestre - 
+/*Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestre -
  Expresión Digital II -  Certamen 2 - 08.11.2017 - Manuela Larrain O.
- 
- Se pide entregar un programa en donde se pueda modificar el comportamiento de  
- objetos por medio de input de mouse y el teclado, y que una vez el programa no 
- reciba input, este tenga un cambio cíclico. Los comportamientos a diseñar tienen 
+
+ Se pide entregar un programa en donde se pueda modificar el comportamiento de
+ objetos por medio de input de mouse y el teclado, y que una vez el programa no
+ reciba input, este tenga un cambio cíclico. Los comportamientos a diseñar tienen
  que  ser relacionados al movimiento y ritmo del entorno natural: olas, viento,
  nieve, agua, ondulación, lluvia, vuelo.
- 
- Al procesar el código, se visualizaran varias lineas en paralelo, que crearan
- distintas ondas. Al precionar la tecla espaciadora, la velocidad de la onda
- aumenta/disminuye, cambiando el  efecto visual que crea la onda, y al precionar
- el mouse, el ancho de las lineas aumenta/disminuye. El comportamiento del código,
- representa el movimiento del agua, ya sea por la velocidad del flujo, o las olas 
- del agua. 
+
+ Al procesar el código, se visualizaran varias líneas en paralelo, que crearán
+ distintas ondas. Al presionar la tecla espaciadora, la velocidad de la onda
+ aumenta/disminuye, cambiando el  efecto visual que crea la onda, y al presionar
+ el mouse, el ancho de las líneas aumenta/disminuye. El comportamiento del código,
+ representa el movimiento del agua, ya sea por la velocidad del flujo, o las olas
+ del agua.
  */
 
 // variables
@@ -27,7 +27,7 @@ float x, y;
 void setup() {
   size(800, 517); //Tamaño del canvas
   o = new Ondas(); //Se declara "o", como la clase "Ondas.
-  guardarpdf = false; 
+  guardarpdf = false;
   celeste = #ACEDEF;
   naranjo = #FA9C21;
   vel = false;
@@ -48,12 +48,12 @@ void draw() {
   }
 
   if (anch) {
-    o.lineas(vv, 5); //Sí el boolean "anch" es verdadero, el ancho de las lineas es 5.
-  } 
+    o.lineas(vv, 5); //Si el boolean "anch" es verdadero, el ancho de las líneas es 5.
+  }
 
   if (!anch) {
-    o.lineas(vv, 2); //Sí el boolean "anch" es falso, el ancho de las lineas es 2.
-  } 
+    o.lineas(vv, 2); //Si el boolean "anch" es falso, el ancho de las líneas es 2.
+  }
 
   if (guardarpdf) {
     endRecord();
@@ -71,6 +71,6 @@ void keyPressed() {
   }
 }
 
-void mousePressed() { //Sí se preciona el mouse, el ancho de las lineas cambia.
+void mousePressed() { //Sí se preciona el mouse, el ancho de las líneas cambia.
   anch = !anch;
 }
