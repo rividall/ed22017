@@ -30,7 +30,7 @@ class Stars {
     if (keyPressed) { 
       line(x, y, x - velX, y - velY) ;
     } else {                           
-      set((int)x, (int)y, c);
+      point((int)x, (int)y);
     }
   }
 }
