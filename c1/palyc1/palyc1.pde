@@ -14,6 +14,7 @@ simulando cambios de dirección en el vuelo.
 */
 
 import processing.pdf.*;
+// http://studio.processingtogether.com/sp/pad/export/ro.9ZbTlw0Ak8yUR/latest
 
 Stars[] s = new Stars[1000];
 
@@ -39,7 +40,7 @@ void draw() {
 
 void keyPressed() {
   //Al presionar la tecla 's', se guarda una imagen .pdf en la carpeta "frames"
-  if (key == 's') { 
+  if (key == 's') {
     saveFrame("frames/palys12c01###.pdf");
   }
   //Al presionar la tecla 'q', se cierra el programa

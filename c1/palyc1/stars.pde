@@ -31,9 +31,9 @@ class Stars {
   }
 
   void hyperdrive() {
-    if (keyPressed) { 
+    if (keyPressed) {
       line(px, py, px - vx, py - vy) ;
-    } else {                           
+    } else {
       set((int)px, (int)py, c);
     }
   }
