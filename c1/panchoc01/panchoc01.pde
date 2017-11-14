@@ -1,8 +1,27 @@
 // Universidad del Desarrollo, Facultad de Diseño, Diseño Digital -  Expresión Digital II
 // Francisco Barría
+
 /*Programa inspirado en el atardecer en los 70. Se podra apreciar un
 un qué un qué??*/
 //No hay decripción general de lo que el programa hará
+
+
+/*CONTROLES
+UP - Aumenta magnitud de la ola.
+Down - Disminuye magnitud de la ola.
+Right - Aumenta velocidad de la ola.
+Left - Disminuye velocidad de la ola.
+
+P - Imprime codigo.
+MOUSE = GENERADORES DE OLA.
+*/
+
+/*Programa inspirado en el atardecer en los 70. Se podrá apreciar una ola de líneas blancas,
+un cielo naranjo, y un mar de puntas azules hasta la ola blanca. Adicionalmente se puede controlar
+las olas para generar una noche o un atardecer con el mouse.
+*/
+
+
 import processing.pdf.*;
 
 Wave w;
