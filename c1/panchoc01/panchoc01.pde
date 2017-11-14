@@ -1,9 +1,8 @@
 // Universidad del Desarrollo, Facultad de Diseño, Diseño Digital -  Expresión Digital II
 // Francisco Barría
-/*Programa inspirado en el atardecer en los 70. Se podra apreciar un  */
-
-
-
+/*Programa inspirado en el atardecer en los 70. Se podra apreciar un
+un qué un qué??*/
+//No hay decripción general de lo que el programa hará
 import processing.pdf.*;
 
 Wave w;

@@ -1,7 +1,7 @@
 class Wave {
   int x, y, i, a, speed_a, magnitude_a;
-  float  alpha_x, alpha_y, omega_x, omega_y, pos_a_x, pos_a_y, pos_o_x, pos_o_y, 
-    lado_A, lado_B, lado_C, angle_B, angle_B_cos, lerp_C, 
+  float  alpha_x, alpha_y, omega_x, omega_y, pos_a_x, pos_a_y, pos_o_x, pos_o_y,
+    lado_A, lado_B, lado_C, angle_B, angle_B_cos, lerp_C,
     w_size, ocean_y, sun_size, sunrise, sunpoint, sun_ratio, sky_ratio;
 
   color sunny_low, sunny, sky, sky_low, ocean;
@@ -11,7 +11,7 @@ class Wave {
   Wave() {
     alpha_x = -300;
     alpha_y = 0;
-    omega_x = 300; 
+    omega_x = 300;
     omega_y = 0;
     w_size = 1;
     sun_size = 200;
@@ -26,8 +26,6 @@ class Wave {
   }
 
   void display() {
-
-
     sky();
     math();
     sun();
@@ -58,7 +56,7 @@ class Wave {
       } else if (pos_a_x == pos_o_x) {
         translate((pos_a_x+pos_o_x)/2, (pos_a_y+pos_o_y)/2);
         rotate(radians(270));
-      }    
+      }
       line(i, sin(radians((a*2)+i))*20, i, sin(radians((a*2)+i))*magnitude_a);
       ocean_y = screenY(i, (sin(radians((a*2)+i))*20));
       popMatrix();
@@ -141,8 +139,8 @@ class Wave {
   void ocean() {
     noStroke();
     fill(ocean);
-    triangle(i-7, height/2, 
-      i+7, height/2, 
+    triangle(i-7, height/2,
+      i+7, height/2,
       i, ocean_y-(height/2));
   }
   void sun() {
