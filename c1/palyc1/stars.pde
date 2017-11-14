@@ -1,40 +1,36 @@
 class Stars {
-  int vel = 3;
+  //int x, y, vel;
   int c = color(253);
-  float px, py, vx, vy;
+  float x, y, vel, posX, posY, velX, velY;
 
   Stars() {
-    show();
-    move();
-  }
+    vel = 3;
+    velX = random(-vel, vel);
+    velY = random(-vel, vel);
 
-  void move() {
-    pushMatrix();
-    translate(mouseX, mouseY);
-    popMatrix();
+    show();
   }
 
   void show() {
-    float r = random(width + height);
+    float r = random(width);
 
-    vx = random(-vel, vel);
-    vy = random(-vel, vel);
-
-    px = (width>>1)  + vx * r;
-    py = (height>>1) + vy * r;
+    x = width/2  + velX * r;
+    y = height/2 + velY * r;
   }
 
   void display() {
-    if ((px += vx) < 0 | px > width | (py += vy) < 0 | py > height) {
-      show();
+
+    if (x > width | (x += velX) < 0 | y > height | (y += velY) < 0) {
+     show();
     }
+
   }
 
   void hyperdrive() {
     if (keyPressed) { 
-      line(px, py, px - vx, py - vy) ;
+      line(x, y, x - velX, y - velY) ;
     } else {                           
-      set((int)px, (int)py, c);
+      set((int)x, (int)y, c);
     }
   }
 }
