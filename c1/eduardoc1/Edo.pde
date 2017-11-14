@@ -1,5 +1,5 @@
 // Nueva clase.
-class Edo { 
+class Edo {
 
   int x1, y1, x2, y2, cx, cy, x3, y3, x4, y4; // Se declaran las variables decimales, de color y enteras.
   int veluno, veldos;
@@ -10,7 +10,7 @@ class Edo {
   float f = 2;
 
   // Constructor.
-  Edo() {             
+  Edo() {
     x1 = 70;       // Se inician las variables decimales, de color y enteras.
     y1 = 70;
     x2 = 70;
@@ -78,23 +78,23 @@ class Edo {
     strokeWeight(g);
     translate(cx, cy);
     rotate(i);
-    line(120, 120, 160, 160); 
+    line(120, 120, 160, 160);
     resetMatrix();
 
 
     translate(cx, cy);
     rotate(o);
-    line(120, 120, 160, 160); 
+    line(120, 120, 160, 160);
     resetMatrix();
 
     translate(cx, cy);
     rotate(i+10);
-    line(75, 75, 90, 90); 
+    line(75, 75, 90, 90);
     resetMatrix();
 
     translate(cx, cy);
     rotate(o+5);
-    line(75, 75, 90, 90); 
+    line(75, 75, 90, 90);
     resetMatrix();
   }
 
@@ -116,6 +116,7 @@ class Edo {
       g --;
 
       if (g <= 3) {       // Cuando las líneas sean inferior o igual a los 3px de grosor, se quedarán así.
+        // mentira.
         g ++;
       }
     }

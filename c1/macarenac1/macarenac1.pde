@@ -1,16 +1,16 @@
 // Universidad del Desarrollo, Facultad de Diseño, Diseño Digital
 // Macarena Ferrer Valle
-// Certamen 1 
-/* El comportamiento de la naturaleza que se escogio fue de ondas, 
-de muchas ondas. Mediante la tecla "a" el ritmo del movimiento de 
-las ondas aumenta en su velocidad. Y con un clic en el mouse cambia 
+// Certamen 1
+/* El comportamiento de la naturaleza que se escogio fue de ondas,
+de muchas ondas. Mediante la tecla "a" el ritmo del movimiento de
+las ondas aumenta en su velocidad. Y con un clic en el mouse cambia
 al color del fondo. */
- 
+
 import processing.pdf.*; // para importar a pdf
 boolean pdf; // declaración boolean para pdf
 
-Ondas[] o = new Ondas[100]; // declaración clase 1
-Ondas1[] o1 = new Ondas1[100]; // declaración clase 2
+Ondas[] o = new Ondas[1]; // declaración clase 1
+Ondas1[] o1 = new Ondas1[1]; // declaración clase 2
 color negro, blanco; // declaración colores
 boolean cambio, cambio1, b, n; // declaración interacciones
 
@@ -37,7 +37,7 @@ void draw() {
   if (pdf) { // se inicia a "grabar" para guardar en pdf
     beginRecord(PDF, "macarenac1.pdf");
   }
-  
+
   //background(negro);
 // fonfo con estela
   fill(negro, 10);
@@ -61,7 +61,7 @@ void draw() {
     o1[i].movimiento1();
     o1[i].figura1();
     o1[i].onda1(10, frameCount * .08);
-    
+
     if (cambio) { // interacción con keyPressed
       o1[i].movimiento1();
     }
@@ -77,7 +77,7 @@ void draw() {
 
 void keyPressed() {
   if (key == 'a') { // si la tecla a se apreta la velocidad cambia
-    cambio = (!cambio);
+    cambio = !cambio;
     cambio1 = (!cambio1);
   }
   if (key == 'w') { // si la tecla w se apreta se guarda como pdf
@@ -86,7 +86,7 @@ void keyPressed() {
 }
 
 void mousePressed() {
-  if (negro == 0) { // si se apreta el mouse los colores cambian 
+  if (negro == 0) { // si se apreta el mouse los colores cambian
     negro = blanco;
   } else {
     negro = 0;
