@@ -28,7 +28,7 @@ El plazo para la entrega es hasta las 14:29:59 del 08 de noviembre de 2017. Qui�
 Se corregirá lo siguiente:
 
 1. **10%** Correcta estructura de redacción
-2. **10%** Descripción oral de una parte del código
+2. ~~**10%** Descripción oral de una parte del código~~
 3. **30%** Correlación entre descripción de código y código
 4. **30%** Resultado visual: El objetivo de la asignatura es la creatividad por lo que dentro de lo subjetivo de la misma, se entiende que la diagramación, tamaños, transiciones, diversidad de forma, etc, llevan a una complejidad visual que tiene directa relación con la cantidad de líneas escritas y la conceptualización para el cumplimiento de lo que se pide como tarea
 5. **20%** Ortografía tanto de código como de descripción

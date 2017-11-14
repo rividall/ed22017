@@ -1,4 +1,4 @@
-class Ondas { // inicio clase Onda 
+class Ondas { // inicio clase Onda
 
   //variables
   float x, y; // declaración de variables posición
@@ -12,7 +12,7 @@ class Ondas { // inicio clase Onda
 
     vx = random(1, 3); // iniciación de variable velocidad x
   }
-  
+
   //métodos
   void movimiento() { // función de movimiento
     if (x > width) { // si x es mayor que el ancho del canvas
@@ -23,12 +23,12 @@ class Ondas { // inicio clase Onda
   }
 
   void figura() { // función que se dibuja
-    fill(#14BAF5); 
+    fill(#14BAF5);
     noStroke();
     ellipse(x, y, 5, 5);
   }
 
-  void onda(float amt, float a) { // Función onda 
+  void onda(float amt, float a) { // Función onda
     vy = amt * cos(a + random(20));
   }
 }
