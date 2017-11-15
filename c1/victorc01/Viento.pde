@@ -20,7 +20,7 @@ class Viento {
     }
   }
 
-  void tifon (float a1, float b1, float c1, float d1, float e1) { 
+  void tifon (float a1, float b1, float c1, float d1, float e1) {
     // Crea una serie de circulos girando en un eje a distintos tiempos.
     //a = tamaño movimiento en circulo.
     //b = tamaño ellipse.
@@ -59,7 +59,7 @@ class Viento {
     }
   }
 
-  void interaccion0() { // Suma o resta el numero de circulos que componen al TIFON. 
+  void interaccion0() { // Suma o resta el numero de circulos que componen al TIFON.
     if (key == 'p') {
       guardarpdf = !guardarpdf;
     }
@@ -81,6 +81,7 @@ class Viento {
     }
   }
 
+  // este método debe tener argumentos locales mh es global :/
   void pdf() { // Termina el guardado en pdf.
     if (guardarpdf) {
       endRecord();
@@ -88,7 +89,8 @@ class Viento {
     }
   }
 
-  void modohuracan() { // Activar el modo huracan.
+  // este método debe tener argumentos locales mh es global :/
+  void modohuracan() { // Activar el modo huracán.
     if (mh) {
       rotate(radians(frameCount*2));
     }

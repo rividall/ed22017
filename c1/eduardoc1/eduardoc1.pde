@@ -4,19 +4,19 @@
 // Certamen_01.
 
 // Descripción: En este programa se pueden visualizar ondas constantes, tal como se ven cuando una gota cae sobre el agua. Basándose en el movimiento del agua, también
-// se puede hacer un paralelo con un remolino que es formado por las líneas que giran alrededor de las ondas. 
+// se puede hacer un paralelo con un remolino que es formado por las líneas que giran alrededor de las ondas.
 
 
 
-import processing.pdf.*;            
+import processing.pdf.*;
 
-Edo []e = new Edo [1];
+Edo []e = new Edo [1]; // si es un objeto no es necesario hacer una lista
 
 boolean print = false;
 
 void setup() {
   // noCursor();
-  size(650, 500); 
+  size(650, 500);
   smooth();
 
   for (int i=0; i< e.length; i++) {
@@ -43,7 +43,7 @@ void draw() {
     e[i].centro();  // Se dibujan los arcos.
     e[i].lineas();  // Se dibujan las líneas.
     e[i].keyPressed(); // Función de tecla.
-    e[i].click();     // Funcion de mouse.
+    e[i].click();     // Función de mouse.
   }
   if (print) {
     endRecord();

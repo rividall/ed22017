@@ -9,9 +9,9 @@ class Lluvia {
   //Fin de atributos
 
   //Constructor
-  /* 
+  /*
    Se inicializa  x e y como random para que esten por todas partes
-   de forma aleatoria en el canvas, se define vy como un map para poder 
+   de forma aleatoria en el canvas, se define vy como un map para poder
    alterarlo con el movimiento del mouseX, tam como una variable que se
    utiliza en el tamaño de la ellipse y su color azul*/
   Lluvia(float tam) {
@@ -40,17 +40,18 @@ class Lluvia {
     fill(azul);
     stroke(azul);
 
+    // esto puede estar en un método independiente
     if (giro) {
       ellipse(a, y, tam, tam);
     } else {
       ellipse(a + cos(n) * r, y + sin(n) * r, tam, tam);
       n = n + 0.2;
       r = r + 0.2;
-      println(giro);
+      // println(giro);
     }
   }
 
-  /*Loop de lluvia, las ellipses caen e y es manipulado por el map cambiando la
+  /*Loop de lluvia, las ellipses caen y es manipulado por el map cambiando la
    velocidad (entre más a la derecha más lento y más a la izquerda es más rápido*/
   void mov() {
     y += map(mouseX, 0, width, 0.05, 2);
