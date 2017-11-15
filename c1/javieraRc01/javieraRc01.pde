@@ -3,15 +3,15 @@
 // javieraRc01
 
 /* Cuando corra el programa se verá una serie de puntos
-que se desplazan formando ondas por el canvas. La union de 
+que se desplazan formando ondas por el canvas. La unión de
 dos tipos de movimiento distinto da la forma de ola a los
-objetos. Por medio de las teclas 'a', 's', 'd', 'f' 
+objetos. Por medio de las teclas 'a', 's', 'd', 'f'
 se puede modificar la gama de colores del programa, que
-representan diferentes partes del día como la noche, amanecer, 
+representan diferentes partes del día como la noche, amanecer,
 día (con sol) y atardecer. Además, con las teclas '1', '2', '3',
-'4' y '5' se puede modificar la amplitud con que se mueven 
+'4' y '5' se puede modificar la amplitud con que se mueven
 los objetos en horizontal y con las teclas 'q', 'w', 'e',
-'r' y 't' se modifica la onda de los objetos en vertical. 
+'r' y 't' se modifica la onda de los objetos en vertical.
 También al hacer click con el mouse se puede guardar una imágen
 de lo que sale en el canvas*/
 
@@ -37,7 +37,8 @@ void setup() {
 
 void draw() {
   fill(cielo, 20);
-  rect(0, 0, width, height); // 
+  rect(0, 0, width, height); //
+  
   for (int i = 0; i < r.length; i++) {
     r[i].union();
   }
@@ -62,7 +63,7 @@ void keyPressed() {
   }
 }
 
-// se puede crear una foto de lo que esta pasando 
+// se puede crear una foto de lo que esta pasando
 // en el canvas haciendo click
 void mousePressed() {
   saveFrame ("jr2_###.jpg");
