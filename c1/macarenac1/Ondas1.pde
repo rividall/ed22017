@@ -25,7 +25,7 @@ class Ondas1 { // inicio clase Onda1
     noStroke();
     ellipse(x, y, 5, 5);
   }
-  void onda1(float amt, float a) { // Función onda 
+  void onda1(float amt, float a) { // Función onda
     vy = amt * cos(a + random(10));
   }
 }

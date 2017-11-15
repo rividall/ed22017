@@ -1,6 +1,11 @@
 // Universidad del Desarrollo, Facultad de Diseño, Diseño Digital -  Expresión Digital II
 // Francisco Barría
 
+/*Programa inspirado en el atardecer en los 70. Se podra apreciar un
+un qué un qué??*/
+//No hay decripción general de lo que el programa hará
+
+
 /*CONTROLES
 UP - Aumenta magnitud de la ola.
 Down - Disminuye magnitud de la ola.
@@ -15,6 +20,7 @@ MOUSE = GENERADORES DE OLA.
 un cielo naranjo, y un mar de puntas azules hasta la ola blanca. Adicionalmente se puede controlar
 las olas para generar una noche o un atardecer con el mouse.
 */
+
 
 import processing.pdf.*;
 

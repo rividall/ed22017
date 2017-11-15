@@ -1,3 +1,5 @@
+// no hay descripción general del programa
+
 import processing.pdf.*; //permitir que el codigo guarde pdf
 boolean guardar;//boolean para guardar
 color naranjo = color(255, 163, 13);
@@ -5,7 +7,8 @@ color blanco = color(255);
 
 //DECLARAR
 
-Gota miGota;//declarar mi clase
+// Gota miGota;//declarar mi clase
+Gota [] miGota = new Gota[10];
 
 void setup() {
   size(500, 500);//canvas de tamaño 500 x 500
@@ -13,7 +16,10 @@ void setup() {
   guardar = false;//
 
   //INICIALIZAR
-  miGota = new Gota (0, 0);//inicializar mi clase en setup
+  for (int i = 0; i < miGota.length; i ++) {
+    miGota[i] = new Gota(random(width), random(height));//inicializar mi clase en setup
+  }
+
 }
 
 void draw() {
@@ -29,7 +35,9 @@ void draw() {
 
   //LLAMAR
   //miOnda.correr();
-  miGota.caer();//Llamar para que llame a la clase
+  for (Gota o : miGota) {
+    o.caer();//Llamar para que llame a la clase
+  }
 
   if (guardar) {
     endRecord();
