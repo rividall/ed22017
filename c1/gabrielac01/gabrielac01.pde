@@ -5,7 +5,7 @@
 
 /*Se podrá ver aquí tres espirales que representan remolinos de viento, 
  tiene dos strokes diferentes para simular la potencia de estos remolinos.
- Esto se logrará mediante una clase llamada Gabriela, la cual contiene todos 
+ Esto se logrará mediante una clase llamada Gabriela, la cual contiene todos
  los elementos a utilizar*/
  
  //Declaración de variable y clase
@@ -32,16 +32,6 @@ void draw() {
       endRecord(); //detiene el proceso
       guardartiff = false;
     }
-    println(frameCount);
-    for (int i = 0; i < 200; i++) { 
-      if (frameCount > 600) {
-        frameCount = frameCount % 600;
-        if (frameCount >= 0 && frameCount < 300) {
-        }
-      }
-    }
-    if (frameCount > 300 && frameCount < 600) {
-    }
   }
 }
 
@@ -49,7 +39,7 @@ void draw() {
 void keyPressed() {
   if (key == 's') {
     guardartiff = true;
-  saveFrame("gabrielac01.tif"); 
+  saveFrame("gabrielac01.tif");
 
   }
 }

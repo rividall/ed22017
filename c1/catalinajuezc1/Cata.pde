@@ -1,6 +1,6 @@
 class Cata {
   // Variables
-  float velx, amt, a, r;
+  float velx2, amt, a, r;
   int x, y, m, tam;
   color miColor3;
 
@@ -11,7 +11,7 @@ class Cata {
     tam = 70; // Tamaño cubos.
     m = 150;  // Para poner a la misma distancia los cubos.
 
-    this.velx= 1;
+    this.velx2= 1;
     amt = frameCount *.5;
     a = 1;
     r = 0.4; // Rotación para eje X.
@@ -22,13 +22,13 @@ class Cata {
   }
 
   // Metodos
-  void giro() { 
+  void giro() {
     strokeWeight(1);
     noFill();
     pushMatrix();
     translate(x, y - m, mouseY/3); // El mouseY define la distancia con el eje Z.
-    rotateY(velx);
-    rotateX(r);
+    rotateY(velx2);
+    //rotateX(r);
     stroke(miColor3);
     box(tam); // Figura 3D primitiva.
     popMatrix();
@@ -37,8 +37,8 @@ class Cata {
   void giro1() {
     pushMatrix();
     translate(x, y + m, mouseY/3);
-    rotateY(velx);
-    rotateX(r);
+    rotateY(velx2);
+    //rotateX(r);
     box(tam);
     popMatrix();
   }
@@ -46,8 +46,8 @@ class Cata {
   void giro2() {
     pushMatrix();
     translate(x -m, y, mouseY/3);
-    rotateY(velx);
-    rotateX(r);
+    rotateY(velx2);
+    //rotateX(r);
     box(tam);
     popMatrix();
   }
@@ -55,14 +55,14 @@ class Cata {
   void giro3() {
     pushMatrix();
     translate(x + m, y, mouseY/3);
-    rotateY(velx);
-    rotateX(r);
+    rotateY(velx2);
+    //rotateX(r);
     box(tam);
     popMatrix();
   }
 
   void movimiento() {
-    velx += 2;   // Definimos el valor de la rotación en eje Y
+    velx2 += 7.02;   // Definimos el valor de la rotación en eje Y
   }
 
   void cambio() {
