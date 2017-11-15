@@ -1,9 +1,11 @@
 class Wave {
+
   int x, y, i, a, speed_a, magnitude_a;                                                // Coordenadas y variables de ola.
 
   float  alpha_x, alpha_y, omega_x, omega_y, pos_a_x, pos_a_y, pos_o_x, pos_o_y,       // Floats de los Controladores.
     lado_A, lado_B, lado_C, angle_B, angle_B_cos, lerp_C,                              // Floats de trigonometria.
     w_size, ocean_y, sun_size, sunrise, sunpoint, sun_ratio, sky_ratio;                // Floats del Sol y el Fondo.
+
 
   color sunny_low, sunny, sky, sky_low, ocean;
   boolean flow;                                                                        //Controla sentido de la ola.
@@ -12,7 +14,7 @@ class Wave {
   Wave() {
     alpha_x = -300;
     alpha_y = 0;
-    omega_x = 300; 
+    omega_x = 300;
     omega_y = 0;
     w_size = 1;
     sun_size = 200;
@@ -58,7 +60,7 @@ class Wave {
       } else if (pos_a_x == pos_o_x) {
         translate((pos_a_x+pos_o_x)/2, (pos_a_y+pos_o_y)/2);
         rotate(radians(270));
-      }    
+      }
       line(i, sin(radians((a*2)+i))*20, i, sin(radians((a*2)+i))*magnitude_a);
       ocean_y = screenY(i, (sin(radians((a*2)+i))*20));
       popMatrix();
@@ -166,4 +168,28 @@ class Wave {
       }
     }
   }
+
+  void ocean() {
+    noStroke();
+    fill(ocean);
+    triangle(i-7, height/2,
+      i+7, height/2,
+      i, ocean_y-(height/2));
+  }
+  void sun() {
+    noStroke();
+
+    fill(sunny);
+    ellipse(0, sunrise, sun_size, sun_size);
+  }
+  void sky() {
+    noStroke();
+    if (sun_ratio<1) {
+      fill(sky);
+    } else {
+      fill(220, 0, 126);
+    }
+    rect(-(width/2), -(height/2), width, height);
+  }
 }
+
