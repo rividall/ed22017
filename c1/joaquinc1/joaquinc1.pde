@@ -1,4 +1,7 @@
 /*Joaquín Domínguez - Expresión Digital II - c1*/
+
+//No hay decripción general de lo que el programa hará
+
 import processing.pdf.*; //se importa el exportador de pdf
 Joaquin[]n = new Joaquin [100]; //Se crea un espacio en la memoria para Joaquin
 boolean print = false; //Se declaran las variables
@@ -15,7 +18,7 @@ void setup() {
   c = color(#2C9EFF, 30);
   for (int i = 0; i < n.length; i++) { //Se crean las esferas
     n[i] = new Joaquin(0, i*10);
-  beginRecord(PDF, "nombre_del_archivo.pdf"); //se comienza la grabación de las figuras
+  beginRecord(PDF, "joaquinc1.pdf"); //se comienza la grabación de las figuras
   }
 }
 void draw() {

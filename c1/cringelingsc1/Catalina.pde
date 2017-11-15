@@ -1,4 +1,4 @@
-class Catalina {   // Se establece la clase Catalina
+ºclass Catalina {   // Se establece la clase Catalina
   //Variables
   float x, y, vx, vy, vx1, vy1, h, k1, k2;    // Variables en decimal a usar.
   int a, b, c, d, e, k;                       // Variables enteras a usar.
@@ -12,7 +12,7 @@ class Catalina {   // Se establece la clase Catalina
   Catalina() {                     /*Se escriben los valores de cada variable. 
                                    Se utiliza this. para referirse a variables
                                    de a otra ventana.*/
-                                   
+
     // Se declaran las variables a utilizar.
     x = 0;
     y = height/2;
@@ -28,7 +28,7 @@ class Catalina {   // Se establece la clase Catalina
     h = 0;
     k1 = 0;
     k2 = k1;
-    
+
     // Variables de Color.
     colores[0] = #70B1D1;
     colores[1] = #1F6486;
@@ -48,14 +48,14 @@ class Catalina {   // Se establece la clase Catalina
       vy *= -1;
     }
   }
-  
+
   // Se crea una ellipse de tamaño (50, 50) o (d, e)
   void bolita1() {
     noStroke();
     fill(colores[f]);
     ellipse(x, y, d, e);
   }
-  
+
   // Se crea el mismo movimiento pero para ellipses más pequeñas
   void movbolitas1() {
     x += vx1;
@@ -67,14 +67,14 @@ class Catalina {   // Se establece la clase Catalina
       vy1 *= -1;
     }
   }
-  
+
   // Se crea una ellipse de tamaño (10, 10) o (a, b);
   void bolita2() {
     fill(colores[f]);  // Color random según array anteriormente mencionado.
     noStroke();
     ellipse(y, x, a, b);
   }
-  
+
   // Se crean dos triángulos a la mitad del canvas. triangulo1 está al inverso.
   void triangulo() {
     fill(0);
@@ -90,7 +90,7 @@ class Catalina {   // Se establece la clase Catalina
     strokeWeight(5);
     triangle(width/2, height-100, 350, 150, 900, 150);
   }
-  
+
   //Se cra una ellipse que rota y traslada en sentido contrario a las manijas del reloj
   void circulos() {
     pushMatrix();
@@ -104,7 +104,7 @@ class Catalina {   // Se establece la clase Catalina
 
     h = h + 0.3;
   }
-  
+
   // Se inicializa las variables de color.
   void colores(int f) {
     this.f = f;

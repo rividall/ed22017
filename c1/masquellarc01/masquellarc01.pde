@@ -1,19 +1,22 @@
-/*Universidad del Desarrollo / Facultad de Diseño / Diseño Digital / 6to semestre / 
+/*Universidad del Desarrollo / Facultad de Diseño / Diseño Digital / 6to semestre /
  Expresión Digital II / Certamen 01 - 08.11.2017 / Josefina Squella R.T.
- 
- 
+
+
  Se pide entregar un programa en donde se pueda modificar el comportamiento de  objetos
- por medio de input de mouse y el teclado, y que una vez el programa no  reciba input, 
+ por medio de input de mouse y el teclado, y que una vez el programa no  reciba input,
  este tenga un cambio cíclico. Los comportamientos a diseñar tienen que  ser relacionados
- al movimiento y ritmo del entorno natural:olas, viento, nieve, agua, ondulación, lluvia, 
- vuelo. */
+ al movimiento y ritmo del entorno natural:olas, viento, nieve, agua, ondulación, lluvia,
+ vuelo.
+*/
+
+//No hay decripción general de lo que el programa hará
 
 import processing.pdf.*;//Crear PDF.
 boolean guardarpdf, o, y, t;//Variables de boolean.
 float f, j, d, s, g, u, b;//Variables de Float.
 color[] r = new color[5];//Array con 5 variables de color.
 color eleccionColor;//resultado array, Variable de color.
-Linea l;
+Linea l; // deben ser un array en donde se almacenan varios objetos
 Pelota p;
 
 
@@ -35,7 +38,7 @@ void setup() {
   u = 0;
   b = 8;
 
-  o= true;//se declara variable como verdadera
+  o = true;//se declara variable como verdadera
   y = true;//se declara variable como verdadera
   t = true;
 
@@ -47,11 +50,11 @@ void draw() {
     beginRecord(PDF, "masquellarc01.pdf");
   }
 
-  //rectangulo con tranparencia para crear las estelas
-  fill(#ffffc0, 80); 
+  //rectángulo con tranparencia para crear las estelas
+  fill(#ffffc0, 80);
   rect(0, 0, 517, 800);
 
-  //Patron de líneas horizontales y verticales
+  //Patrón de líneas horizontales y verticales
   translate(10, 0);
   for (int i = 0; i < 100; i+=5) {
     for (int j =0; j < 100; j+=5) {
@@ -59,8 +62,8 @@ void draw() {
     }
   }
 
-  for (int i = 0; i < 100; i+=5) {
-    for (int j =0; j < 100; j+=10) {
+  for (int i = 0; i < 100; i += 5) {
+    for (int j = 0; j < 100; j += 10) {
       l.lineav(i+50, j+(i+50), r[eleccionColor]);
     }
   }
@@ -88,9 +91,10 @@ void draw() {
 
 
   //Movimiento de y en las pelotas
-  g-=5;
+  // esto debe ser un método de la clase
+  g -= 5;
   if (g < -400 ) {
-    g=0;
+    g = 0;
   }
   //loop de pelotas
 
@@ -99,13 +103,14 @@ void draw() {
       p.pelota1(i  + 120 + u, j+random(10) + g + 500, b, r[eleccionColor]);
     }
   }
-if(j < 100||j > 600){
-  j= 0;}
- 
-  popMatrix(); 
+  if(j < 100||j > 600){
+    j= 0;
+  }
+
+  popMatrix();
   //Límite de pelotas
   fill(#ffffc0);
- rect(0,0, 517, 100);
+  rect(0,0, 517, 100);
   rect(0, 640, 517, 200);
   rect(-10, 0, 30, 800);
   //boolean que hace desaparecer las pelotas
@@ -121,7 +126,7 @@ if(j < 100||j > 600){
     u = 0;
   }
 
-  if (!y) { 
+  if (!y) {
     //u  = cos(radians(u)) + frameCount ++;
     //u=20;
     for (int i = 0; i< 250; i += 20) {
@@ -136,24 +141,15 @@ if(j < 100||j > 600){
     u += 1;
   }
 
-  
-  
+
+
 fill(#ffffc0);
 rect(0, 600, 517, 300);
 
-
-
-
-
-//n.junta(d);
-//if (d < -380){
-//d=0;}
-//d--;
-
 if (guardarpdf) {
-  endRecord();
-  guardarpdf = false;
-}
+    endRecord();
+    guardarpdf = false;
+  }
 }
 
 void keyPressed() {
@@ -168,12 +164,12 @@ void keyPressed() {
 
   if (key == 'a') {
     y = !y;
-  
+
   }
   if (key == 'p') {
     guardarpdf = !guardarpdf;
   }
-} 
+}
 void mousePressed() { //Sí se preciona el mouse, el ancho de las lineas cambia.
   o = !o;
 }
