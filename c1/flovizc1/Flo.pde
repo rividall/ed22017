@@ -53,6 +53,7 @@ class Flo {
       strokeWeight(3);
       point(a + 10, height/4 + sin(b) * 40);
 
+
       stroke(c2);
       strokeWeight(3);
       point(a+40, height/4+ sin(b) * -40);
@@ -61,6 +62,7 @@ class Flo {
       //background(50); // ¿?
       a=random(800); // innecesario si la variable es float
       b=random(100); // innecesario si la variable es float
+
     }
    
   }
@@ -69,8 +71,10 @@ class Flo {
   void keyPressed() {
 
     if (key == 'n') {
+
       c=(int)random(#F25858); //mal
       c2=(int)random(#587AF2); //mal
+
     } else {
       c = color(#DE4144);
       c2 = color(#414ADE);

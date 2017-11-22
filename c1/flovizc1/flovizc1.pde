@@ -5,6 +5,7 @@ Universidad del Desarrollo
  Certamen II
  Miércoles 8, noviembre, 2017
  */
+
 //En el código a continuación, se inicializa la clase 'Flo' con dos variables tipo array, 
 //con el fin de crear un movimiento que represente dos ADN en el canvas, a base de distintas ondas;
 //Uno que vaya de izquierda a derecha y otro de derecha a izquierda
@@ -12,8 +13,8 @@ Universidad del Desarrollo
 
 
 //Declaración de clase y variables.
-Flo [] n = new Flo[10];
-Flo [] m = new Flo[10];
+Flo [] n = new Flo[4];
+Flo [] m = new Flo[4];
 import processing.pdf.*;
 boolean guardarpdf; 
 
@@ -45,14 +46,15 @@ void draw() {
     beginRecord(PDF, "ADN.pdf");
   }
   //Se crea por cada frame un rectángulo del tamaño del canvas con fondo nefro y sin bordes.
-  fill(0, 1);
+  fill(0, 5);
   noStroke();
   rect(0, 0, width, height);
-  //background(#343434);
+  
   //For Loop de clase variable n y keyPressed.
   for (int i=0; i < n.length; i++) {
     n[i].ADN();
-    n[i].keyPressed();
+    n[i].keyPressed();  
+
   }
   //For Loop de clase variable m y keyPressed.
   for (int i = 0; i < m.length; i++) {
@@ -67,8 +69,10 @@ void draw() {
     guardarpdf = false;
   }
   //Si se hace click con el mouse, se guarda el archivo como tiff.
-  if (mousePressed == true) {
 
-    save("ADN.tiff"); //
-  }
+  if (mousePressed == true){
+
+    save("ADN.tiff");
+
+}
 }
