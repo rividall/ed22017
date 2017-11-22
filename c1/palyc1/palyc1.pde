@@ -14,6 +14,10 @@ Al presionar la tecla 'q', se cierra el programa.
 */
 
 
+import processing.pdf.*;
+// http://studio.processingtogether.com/sp/pad/export/ro.9ZbTlw0Ak8yUR/latest
+
+
 Stars[] s = new Stars[1500];
 
 void setup() {
@@ -38,8 +42,10 @@ void draw() {
 
 void keyPressed() {
   //Al presionar la tecla 's', se guarda una imagen .pdf en la carpeta "frames"
+
   if (key == 's') { 
     saveFrame("frames/palyc1###.pdf");
+
   }
   //Al presionar la tecla 'q', se cierra el programa
   if (key == 'q') {

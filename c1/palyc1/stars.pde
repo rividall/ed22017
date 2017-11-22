@@ -27,10 +27,12 @@ class Stars {
   }
 
   void hyperdrive() {
-    if (keyPressed) { 
-      line(x, y, x - velX, y - velY) ;
-    } else {                           
-      point((int)x, (int)y);
+
+    if (keyPressed) {
+      line(px, py, px - vx, py - vy) ;
+    } else {
+      set((int)px, (int)py, c);
+
     }
   }
 }

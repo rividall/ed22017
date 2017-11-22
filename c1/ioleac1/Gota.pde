@@ -1,8 +1,8 @@
 class Gota {
   //variables para la gota
-  int x = 0;
-  int y = 0;
-  int centro = 250;
+  float x = 0;
+  float y = 0;
+  float centro;
   int diametroinicial = 300;
   int diametrofinal = 0;
   int achicar = -1;
@@ -12,20 +12,18 @@ class Gota {
   int yy, yy1, yy2 = 0;
   int speed = +5;
   int nospeed = 0;
-  
-
 
   //constructor
-  Gota (int _x, int _y) {
-    x = _x;
+  Gota (float _x, float _y) {
+    centro = _x;
     y = _y;
   }
 
   void caer() {//Funciones en una sola
     gota();//Circulo Relleno (Gota)
     cayendo();//Reduccion Circulo (Gota)
-    Ondanaranja();//Forma elipse naranja
-    Ondablanca();//Forma elipse Blanca
+    ondanaranja();//Forma elipse naranja
+    ondablanca();//Forma elipse Blanca
     expandirnaranjo();//Expansion elipse naranja
     expandirblanco();//Expansion elipse blanca
   }
@@ -46,25 +44,26 @@ class Gota {
   }
   //funciones
   void gota() {
-    noStroke();//Sin linea
+    noStroke();//Sin línea
     fill(142, 142, 142);//Relleno Gris
-    ellipse (centro, centro, diametroinicial* cos(frameCount *0.009), diametroinicial* cos(frameCount *0.009));
-  }//Elipse en el centro con 300 de diametro el cual se ve afectado por un coseno al 
-  void Ondanaranja() {    //desplazarse
+    ellipse(centro, centro, diametroinicial* cos(frameCount *0.009), diametroinicial* cos(frameCount *0.009));
+  }//Elipse en el centro con 300 de diametro el cual se ve afectado por un coseno al
+  void ondanaranja() {    //desplazarse
     stroke(naranjo);//Linea Naranja
     strokeWeight(5);// Grosor de Linea 5
     noFill();//sin relleno
     ellipse(centro, centro, xx, yy);//elipse en el centro con 0,0 de diametro
   }
 
-  void Ondablanca() {
+  void ondablanca() {
     stroke(blanco);//Linea blanca
     strokeWeight(5);// Grosor de Linea 5
     noFill();//sin relleno
     ellipse(centro, centro, xx1, yy1);//elipse en el centro con 0,0 de diametro
   }
+
   void expandirnaranjo() {//Movimiento de la elipse naranja
-    if (diametroinicial == 0) {  
+    if (diametroinicial == 0) {
       xx += speed;
       yy += speed;//si el diametro de la gota llega a 0, la elipse naranja crece
     }
@@ -74,7 +73,6 @@ class Gota {
     }
   }
 
-
   void expandirblanco() {//movimiento de la elipse Blanca
     if (xx > 100 || xx1 > 0) {
       xx1 = xx1 + speed;
@@ -82,14 +80,10 @@ class Gota {
         yy1 =  yy1 + speed;//si la elipse naraja es mayor a 100 o la elipse blanca crece
       }                   //si la elipse blanca es mayor a 0, mantiene el crecimiento
     }
-    if  ( xx1 > 685 && yy1 > 685) {
+    if ( xx1 > 685 && yy1 > 685) {
       yy1 = nospeed;
       xx1 = nospeed;//si la elipse blanca llega a 685 de diametro, esta vuelve a 0
     }
   }
 }
-
-
-
-
-//Fin codigo
+//Fin código
