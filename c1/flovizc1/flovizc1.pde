@@ -1,9 +1,10 @@
-//Universidad del Desarrollo
-//Facultad de Diseño
-//Expresión Digital II 
-//Certamen II
-//Miércoles 8, noviembre, 2017
-
+/*
+Universidad del Desarrollo
+ Facultad de Diseño
+ Expresión Digital II 
+ Certamen II
+ Miércoles 8, noviembre, 2017
+ */
 //En el código a continuación, se inicializa la clase 'Flo' con dos variables tipo array, 
 //con el fin de crear un movimiento que represente dos ADN en el canvas, a base de distintas ondas;
 //Uno que vaya de izquierda a derecha y otro de derecha a izquierda
@@ -11,8 +12,8 @@
 
 
 //Declaración de clase y variables.
-Flo [] n = new Flo[4];
-Flo [] m = new Flo[4];
+Flo [] n = new Flo[10];
+Flo [] m = new Flo[10];
 import processing.pdf.*;
 boolean guardarpdf; 
 
@@ -39,18 +40,19 @@ void setup() {
 //Inicialización ámbito de dibujo
 void draw() {
   //Al momento de guardar el archivo, se inicia el proceso.
+  // esto nunca ocurre
   if (guardarpdf) {
     beginRecord(PDF, "ADN.pdf");
   }
   //Se crea por cada frame un rectángulo del tamaño del canvas con fondo nefro y sin bordes.
-  fill(0, 5);
+  fill(0, 1);
   noStroke();
   rect(0, 0, width, height);
-  
+  //background(#343434);
   //For Loop de clase variable n y keyPressed.
   for (int i=0; i < n.length; i++) {
     n[i].ADN();
-    n[i].keyPressed();  
+    n[i].keyPressed();
   }
   //For Loop de clase variable m y keyPressed.
   for (int i = 0; i < m.length; i++) {
@@ -58,15 +60,15 @@ void draw() {
     m[i].keyPressed();
   }
 
-  //Se termina el guardado del archivo como pdf y vuelve a ser falso. 
+  //Se termina el guardado del archivo como pdf y vuelve a ser falso.
+  // esto nunca ocurre
   if (guardarpdf) {
     endRecord();
     guardarpdf = false;
   }
   //Si se hace click con el mouse, se guarda el archivo como tiff.
-  if (mousePressed == true){
+  if (mousePressed == true) {
 
-    save("ADN.tiff");
-
-}
+    save("ADN.tiff"); //
+  }
 }
