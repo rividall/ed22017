@@ -12,32 +12,34 @@ class Flo {
 
 //Se les asigna un valor a cada variable
   Flo() {
-    y=0;
-    x=0;
+    y = 0;
+    x = 0;
     i=0;
-    c=color(255, 0, 0);
-    c2=color(0, 0, 255);
-    a=800;
-    b=100;
+    c = color(255, 0, 0);
+    c2 = color(0, 0, 255);
+    a = 800;
+    b = 100;
   }
 
 //Se crea una función llamada ADN
-  void ADN() {
+  void ADN() { // los métodos son con minúsculas
     if (x < 900) {
       stroke(c);
       strokeWeight(3);
-      point(x + 80, height/2+120 + sin(y+5) * 40);
+      point(x + 80, height/2+120 + sin(y+5) * 140);
 
       stroke(c2);
       strokeWeight(3);
-      point(x+100, height/2+120+ sin(y) * -40);
+      point(x+100, height/2+120+ sin(y*.5) * -140);
+      // prueba
+      line(x+100, height/2+120+ sin(y*.5) * -40, x + 80, height/2+120 + sin(y+5) * 40);
     } else {
 
-      background(50);
+      //background(50); //¿?
       x=(int)random(200);
       y=(int)random(100);
     }
-    x = x + 3;
+    x = x + 1;
     y = y + 0.2;
   }
 
@@ -49,16 +51,18 @@ class Flo {
     if (a > 0) {
       stroke(c);
       strokeWeight(3);
-      point(a + 10, height/4 + sin(b+5) * 40);
+      point(a + 10, height/4 + sin(b) * 40);
+
 
       stroke(c2);
       strokeWeight(3);
       point(a+40, height/4+ sin(b) * -40);
     } else {
 
-      background(50);
-      a=(int)random(800);
-      b=(int)random(100);
+      //background(50); // ¿?
+      a=random(800); // innecesario si la variable es float
+      b=random(100); // innecesario si la variable es float
+
     }
    
   }
@@ -67,8 +71,10 @@ class Flo {
   void keyPressed() {
 
     if (key == 'n') {
-      c=(int)random(#F25858);
-      c2=(int)random(#587AF2);
+
+      c=(int)random(#F25858); //mal
+      c2=(int)random(#587AF2); //mal
+
     } else {
       c = color(#DE4144);
       c2 = color(#414ADE);
