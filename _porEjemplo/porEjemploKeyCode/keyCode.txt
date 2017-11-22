@@ -1,0 +1,34 @@
+KEYCODE
+
+La variable keyCode se usa para detectar y llamar teclas especiales, como las teclas de flecha arriba, abajo, derecha e iquierda.
+
+Otras teclas que deben ser llamadas por medio del keyCode son alt, control y mayúscula.
+
+Se llama de la siguiente manera:
+
+  if (keyCode == UP) {   }
+  if (keyCode == DOWN) {   }
+  if (keyCode == RIGHT) {   }
+  if (keyCode == LEFT) {   }
+  
+  if (keyCode == CONTROL) {   }
+  if (keyCode == MAYUS) {   }
+  if (keyCode == ALT) {   }
+
+No es necesario hacerlo, pero si se quiere comprobar si la tecla está codificada se puede hacer de la siguiente manera:
+
+void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+
+   }
+  }
+}
+
+Si embargo hay teclas especiales que no necesitan ser llamadas por medio de un keyCode, solo de un key:
+BACKSPACE
+TAB
+ENTER
+RETURN
+ESC
+DELETE
