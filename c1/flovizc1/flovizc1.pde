@@ -1,8 +1,10 @@
-//Universidad del Desarrollo
-//Facultad de Diseño
-//Expresión Digital II 
-//Certamen II
-//Miércoles 8, noviembre, 2017
+/*
+Universidad del Desarrollo
+ Facultad de Diseño
+ Expresión Digital II 
+ Certamen II
+ Miércoles 8, noviembre, 2017
+ */
 
 //En el código a continuación, se inicializa la clase 'Flo' con dos variables tipo array, 
 //con el fin de crear un movimiento que represente dos ADN en el canvas, a base de distintas ondas;
@@ -39,6 +41,7 @@ void setup() {
 //Inicialización ámbito de dibujo
 void draw() {
   //Al momento de guardar el archivo, se inicia el proceso.
+  // esto nunca ocurre
   if (guardarpdf) {
     beginRecord(PDF, "ADN.pdf");
   }
@@ -51,6 +54,7 @@ void draw() {
   for (int i=0; i < n.length; i++) {
     n[i].ADN();
     n[i].keyPressed();  
+
   }
   //For Loop de clase variable m y keyPressed.
   for (int i = 0; i < m.length; i++) {
@@ -58,12 +62,14 @@ void draw() {
     m[i].keyPressed();
   }
 
-  //Se termina el guardado del archivo como pdf y vuelve a ser falso. 
+  //Se termina el guardado del archivo como pdf y vuelve a ser falso.
+  // esto nunca ocurre
   if (guardarpdf) {
     endRecord();
     guardarpdf = false;
   }
   //Si se hace click con el mouse, se guarda el archivo como tiff.
+
   if (mousePressed == true){
 
     save("ADN.tiff");
