@@ -12,7 +12,7 @@ mouseDragged(event)
 
 ###  Por ejemplo:
 
-```
+```java
 
 int value = (#fb3838);
 void setup () {
@@ -41,7 +41,7 @@ Al hacer click y arrastrar el mouse sobre el canvas , el rectangulo cambia de va
 
 Ahora que sabemos como cambiar un variable con el mouseDragged() podemos cambiar la posicion de esta. A continuación les dejare un codigo que permite arrastrar una ellipse y dejarlo una elipse estacionaria hasta arrastrarlo de nuevo con el mouse.
 
-```
+```java
 
 float x = 250;
 float y = 250;
