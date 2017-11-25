@@ -1,13 +1,15 @@
-## text() 
+## Curve() 
 
-**Descripción:** Para escribir en el lienzo. Se utilizará una fuente predeterminada a menos que se establezca una fuente con la función textFont () y se usará un tamaño predeterminado a menos que se establezca una fuente con textSize (). Cambia el color del texto con la función fill ().
+**Descripción:**
+
+La función curva es una línea que está formada por cuatro puntos, dos puntos  que unen una línea y otros dos que son los controlados de los puntos anteriores. 
 
 
 
 #### Syntax:
 
 ```
-text("word", 10, 60);
+curve(x, y, x2, y2, x3, y3, x4, y4);
 ```
 
 ```
