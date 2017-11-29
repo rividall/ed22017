@@ -1,35 +1,29 @@
-ArrayList <Dibujo> Dibujos = new ArrayList <Dibujo>();
+ArrayList<Particle> particles;
 
 void setup() {
-  size(500, 500);
-  background(255);
+  size(400, 400); 
+  smooth();
+
+  particles = new ArrayList<Particle>(); //incicializacion
 }
 
 void draw() {
   background(255);
-  for (int i=0; i<Dibujos.size(); i+=3) {   // separación de las ellipses.
-    Dibujos.get(i).display();
-  }
-}
 
-void mouseDragged() {
-  Dibujos.add(new Dibujo(mouseX, mouseY));
-}
+  //Use dot syntax with the add function() to put particles into your ArrayList
+  //Here a new particle object is added to the ArrayList every cycle through draw.
+  particles.add(new Particle()); 
 
-class Dibujo {
-  float x, y, r;
-  color c;
 
-  Dibujo(float ax, float ay) {
-    x=ax;
-    y=ay;
-    r=random(5, 15);           // Modificación random entre 5 y 15pc del tamaño.
-    c=color(random(100, 200), 255, 50);
+
+
+  for (int i = 0; i < particles.size(); i++) { 
+    Particle p = (Particle) particles.get(i);
+    p.run();
   }
 
-  void display() {
-    noStroke();
-    fill(c, 100);
-    ellipse(x, y, r, r);
+
+  if (particles.size() >500) {  //Cuando la colecicon llega a 100 se elimiana la particula y toma el valor cero del arraylist
+    particles.remove(0);
   }
 }
