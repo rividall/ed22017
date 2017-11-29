@@ -1,2 +1,0 @@
-Un ArrayList almacena una cantidad variable de objetos. 
-Es como un Array de objetos pero con ArrayList los elementos pueden agregarse (.add()) y eliminarse (.remove()) fácilmente de ArrayList y su tamaño (.size()).
