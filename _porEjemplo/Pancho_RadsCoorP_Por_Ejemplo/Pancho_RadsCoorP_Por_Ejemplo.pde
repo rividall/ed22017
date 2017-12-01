@@ -11,9 +11,9 @@ void draw() {
 
   translate(width/2, height/2);
   clocky();
-  //seno();
-  // coseno();
-  //tangente();
+  seno();
+   coseno();
+  tangente();
 }
 void clocky() {
 

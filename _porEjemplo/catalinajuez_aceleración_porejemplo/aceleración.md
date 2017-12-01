@@ -137,4 +137,4 @@ lo cual causa que este circulo se frene para que luego cambie la direcci\'f3n en
    mouse.setMag(0.2);\
    acceleration = mouse;\
 // La magnitud o longitud del mouse es 0.2\
-// El valor de la aceleraci\'f3n es igual al mouse.}
+// El valor de la aceleraci\'f3n es igual al mouse.} 

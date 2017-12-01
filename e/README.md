@@ -42,9 +42,16 @@ Posteriormente en clases se traspasarán esas características a código.
 
 ### Plazo
 
-El plazo para la entrega es hasta las 14:29:59 del 15 de noviembre de 2017. 
-Quién entregue posterior a ese plazo, se corregirá la entrega para que el alumno entienda su avance, pero tendrá nota 1.0
+**El plazo para la entrega es hasta las 08:30:00 del 6 de diciembre de 2017.** 
+Quién entregue posterior a ese plazo tendrá nota 1.0
+
+La entrega debe ser por un pull request, en la carpeta `e` 
 
 ### Nota
 
-La entrega de referentes tendrá nota acumulativa, así como también el trabajo y entrega del avance en clases.
+La nota tendrá valoración por:
+
+1. Redacción 30%
+2. Diseño 30%
+3. Interacción 20% 
+4. Ortografía 20%
