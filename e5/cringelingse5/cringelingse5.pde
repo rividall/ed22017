@@ -1,21 +1,23 @@
-Catalina[] rocio;
+Rocio[] rocio;
+//Humedad[] hum;
+//Viento[] wind;
 Table tabla;
 
 void setup () {
   fullScreen();
   tabla = loadTable("baseDatos.csv", "header");
-  rocio = new Catalina[tabla.getRowCount()];
-
+  rocio = new Rocio[tabla.getRowCount()];
   for (int i = 0; i < tabla.getRowCount(); i++) {
     TableRow row = tabla.getRow(i);
 
     String a = row.getString("year");
-    String m = row.getString("mes");
     String d = row.getString("dia");
+    int m = row.getInt("mes");
     int maxima = row.getInt("Max PuntoRocio");
     int mean = row.getInt("Mean PuntoRocio");
     int minima = row.getInt("Min PuntoRocio");
-    rocio[i] = new Catalina(a, m, d, maxima, mean, minima);
+    rocio[i] = new Rocio(a, d, m, maxima, mean, minima);
+    // rocio[i] = new Rocio(a, m, d, maxima, minima);
   }
 }
 
@@ -24,9 +26,9 @@ void draw() {
   for (int i = 0; i < rocio.length; i ++) {
     rocio[i].tetxomes();
     rocio[i].circulogeneral();
-    rocio[i].primavera();
     rocio[i].verano();
-    rocio[i].invierno();
     rocio[i].otono();
+    rocio[i].invierno();
+    rocio[i].primavera();
   }
 }
