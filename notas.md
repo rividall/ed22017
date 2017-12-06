@@ -1,33 +1,35 @@
 Universidad del Desarrollo - Facultad de Diseño - Diseño Digital - 6to semestre - Expresión Digital II
 
-#### Notas  
+#### Notas finales y promedio
 
-------
+Solamente Javiera Barraza y José Miguel Arriagada, no pueden presentar examen debido a que su promedio es inferior a 3.0.
 
-A la fecha, faltan las notas del **por ejmplo** y algunos ejercicios
+| **alumno**             | **tareas** | **c0** | **c1** | por EJ | **avance e** | **promedio** |
+| ---------------------- | ---------- | ------ | ------ | ------ | ------------ | ------------ |
+| **catalina juez**      | 26.7       | 68     | 40     | 40     | 10           | 39.84        |
+| **victor**             | 34         | 65     | 65     | 60     | 11           | 49.95        |
+| **pancho**             | 47.5       | 60     | 67     | 45     | 10           | 49.5         |
+| **lynch**              | 50         | 60     | 67     | 55     | 0            | 50           |
+| **macarena**           | 62.7       | 65     | 58     | 70     | 46           | 60.69        |
+| **javiera R**          | 62.2       | 60     | 63     | 45     | 11           | 51.59        |
+| **ignacio**            | 32.2       | 60     | 59     | 10     | 10           | 39.19        |
+| **nicolás**            | 50         | 60     | 55     | 68     | 46           | 55.85        |
+| **sofia**              | 57.5       | 45     | 55     | 35     | 58           | 50.45        |
+| **manuela**            | 50.5       | 37     | 59     | 50     | 46           | 48.5         |
+| **joaquin**            | 48.8       | 45     | 48     | 55     | 35           | 46.51        |
+| **natalia**            | 53         | 37     | 45     | 40     | 46           | 44           |
+| **florencia V**        | 52.8       | 45     | 36     | 40     | 23           | 40.26        |
+| **pali**               | 37.7       | 40     | 40     | 55     | 10           | 37.29        |
+| **florencia M**        | 56.7       | 36     | 44     | 55     | 35           | 44.84        |
+| **eduardo**            | 51.2       | 35     | 45     | 40     | 11           | 37.89        |
+| **masquellar**         | 57.2       | 37     | 41     | 45     | 46           | 44.59        |
+| **josePedro**          | 50.2       | 10     | 59     | 58     | 46           | 42.89        |
+| **catalina Ringeling** | 44.5       | 45     | 23     | 20     | 35           | 34.15        |
+| **gabriela**           | 34.2       | 37     | 20     | 35     | 35           | 31.59        |
+| **javiera B**          | 25.2       | 35     | 42     | 10     | 10           | 27.29        |
+| **joseMiguel**         | 25.8       | 10     | 10     | 10     | 10           | 13.16        |
 
-| **alumno**             | **s01t00** | **s03t00** | **s05t00** | **s08t00** | **c0** |
-| ---------------------- | ---------- | ---------- | ---------- | ---------- | ------ |
-| **catalina juez**      | 55         | 10         |            |            | 68     |
-| **catalina Ringeling** | 40         | 59         |            | 40         | 45     |
-| **eduardo**            | 55         | 57         | 55         |            | 35     |
-| **florencia M**        | 60         | 60         | 70         | 30         | 36     |
-| **florencia V**        | 55         | 10         | 50         | 30         | 45     |
-| **gabriela**           | 40         | 60         | 60         |            | 37     |
-| **ignacio**            | 45         | 10         |            |            | 60     |
-| **javiera B**          | 40         | 56         |            |            | 35     |
-| **javiera R**          | 65         | win        |            |            | 60     |
-| **joaquin**            | 65         | 60         |            | 65         | 45     |
-| **joseMiguel**         | 30         | 10         |            |            | 10     |
-| **josePedro**          | 10         | 10         | 55         | 60         | 10     |
-| **lynch**              | 65         | 62         |            | 55         | 60     |
-| **macarena**           | 55         | 65         | 70         | 30         | 65     |
-| **manuela**            | 55         | win        |            |            | 37     |
-| **masquellar**         | 40         | 64         | 55         | 30         | 37     |
-| **natalia**            | 40         | 59         | 55         | 30         | 37     |
-| **nicolás**            | 55         | win        |            |            | 60     |
-| **pali**               | 70         | 68         |            |            | 40     |
-| **pancho**             | 70         | 70         |            |            | 60     |
-| **sofia**              | 45         | 61         | 60         |            | 45     |
-| **victor**             | 45         | 57         |            |            | 65     |
+
+
+
 

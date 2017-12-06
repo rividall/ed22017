@@ -14,7 +14,7 @@ textFont(nombreTipografia)
 
 #### Por ejemplo:
 
-```
+```java
 PFont fuente; // fuente declarada
 
 void setup() {
