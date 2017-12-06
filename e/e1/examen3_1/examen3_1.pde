@@ -5,6 +5,7 @@
  de mayor tamaño. El color de la flecha varia según la temperatura máxima experimentada ese día.
  Girando, aparecen en mayor o menor tamaño elementos que varían de azul a gris dependiendo de la cantidad de
  precipitación ocurrida esa semana.
+ Se puede iterar entre la visualización semanal y diaria con las teclas 'a' y 's'.
  */
 
 Table table;
